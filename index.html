@@ -7,14 +7,17 @@
     <!-- Primary SEO -->
     <title>Clenza | Professional Cleaning Services Sydney</title>
     <meta name="description" content="Reliable home, office, end-of-lease and Airbnb cleaning across Sydney. Verified cleaners, transparent pricing, 100% satisfaction guarantee. Book in 60 seconds." />
-    <meta name="keywords" content="cleaning service Sydney, end of lease cleaning, house cleaning, office cleaning, Airbnb cleaning, bond cleaning NSW, carpet cleaning Sydney" />
+    <meta name="keywords" content="cleaning service Sydney, end of lease cleaning, house cleaning, office cleaning, Airbnb cleaning, bond cleaning NSW, carpet cleaning Sydney, deep cleaning Sydney, move out cleaning" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Clenza" />
+    <link rel="canonical" href="https://megaclean-pro.vercel.app/" />
 
     <!-- Open Graph -->
     <meta property="og:type"        content="website" />
-    <meta property="og:url"         content="https://clenza.com.au/" />
+    <meta property="og:url"         content="https://megaclean-pro.vercel.app/" />
     <meta property="og:title"       content="Clenza | Professional Cleaning Services Sydney" />
     <meta property="og:description" content="Reliable home, office, end-of-lease and Airbnb cleaning across Sydney. Verified cleaners, transparent pricing, 100% satisfaction guarantee." />
-    <meta property="og:image"       content="https://clenza.com.au/images/og-image.jpg" />
+    <meta property="og:image"       content="https://megaclean-pro.vercel.app/images/og-image.jpg" />
     <meta property="og:locale"      content="en_AU" />
     <meta property="og:site_name"   content="Clenza" />
 
@@ -22,7 +25,7 @@
     <meta name="twitter:card"        content="summary_large_image" />
     <meta name="twitter:title"       content="Clenza | Professional Cleaning Services Sydney" />
     <meta name="twitter:description" content="Reliable home, office, end-of-lease and Airbnb cleaning across Sydney." />
-    <meta name="twitter:image"       content="https://clenza.com.au/images/og-image.jpg" />
+    <meta name="twitter:image"       content="https://megaclean-pro.vercel.app/images/og-image.jpg" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -31,6 +34,95 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- LocalBusiness Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CleaningService",
+      "name": "Clenza",
+      "description": "Sydney's trusted professional cleaning service. Verified cleaners, transparent pricing, and a 100% satisfaction guarantee.",
+      "url": "https://megaclean-pro.vercel.app",
+      "telephone": "04XX-XXX-XXX",
+      "email": "hello@clenza.com.au",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sydney",
+        "addressRegion": "NSW",
+        "addressCountry": "AU"
+      },
+      "areaServed": [
+        "Sydney CBD", "Eastern Suburbs", "Inner West",
+        "North Shore", "Parramatta", "Western Sydney",
+        "Hills District", "South Sydney"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "07:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "07:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "08:00",
+          "closes": "16:00"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Cleaning Services",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "End-of-Lease Cleaning"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "House Cleaning"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Deep Cleaning"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Office Cleaning"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Airbnb Cleaning"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Carpet Cleaning"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Window Cleaning"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Move-In / Move-Out Cleaning"}}
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "500",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Sarah M."},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+          "reviewBody": "I was terrified about losing my bond after 3 years in my apartment. Clenza were thorough, professional, and got every corner I'd forgotten about. Got my full bond back."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "James T."},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+          "reviewBody": "As an Airbnb host with 3 properties, reliable turnaround cleaning is everything. They show up on time, every time. My guest reviews went from 4.6 to 4.9 stars since switching to Clenza."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Lisa K."},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+          "reviewBody": "Clenza is the first that actually does what they say — consistent quality, transparent invoices, and genuinely responsive service."
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/clenza",
+        "https://www.instagram.com/clenza"
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

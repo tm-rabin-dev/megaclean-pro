@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://megaclean-pro.vercel.app/sitemap.xml
