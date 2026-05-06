@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base ─────────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans antialiased text-slate-900;
+    background-color: #f9f6f2;
+  }
+}
+
+/* ─── Utilities ─────────────────────────────────────────── */
+@layer utilities {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 text-white font-bold rounded-xl transition-colors shadow-sm;
+    background-color: #176b61;
+  }
+  .btn-primary:hover {
+    background-color: #11564e;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 border-2 border-slate-200 text-slate-700 font-semibold rounded-xl transition-colors;
+  }
+  .btn-outline:hover {
+    border-color: #69bfb0;
+    color: #176b61;
+  }
+  .card {
+    @apply bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300;
+  }
+  .section-pad {
+    @apply py-20 px-6;
+  }
+  .container-max {
+    @apply max-w-6xl mx-auto;
+  }
+}
+
+/* ─── Subtle dot backdrop on light sections ─────────────── */
+/*
+   Applies a barely-visible dot grid to white and slate-50
+   sections only. Dark sections (slate-900, blue-600) are
+   unaffected because their solid background-color covers it.
+*/
+section.bg-white {
+  background-color: #fdfbf8;
+}
+
+section.bg-slate-50 {
+  background-color: #f5f1ec;
+}
+
+/* ─── Hero load animations ───────────────────────────────── */
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-1 { animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both; }
+.hero-2 { animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both; }
+.hero-3 { animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both; }
+.hero-4 { animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.35s both; }
+.hero-5 { animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.48s both; }
+
+@keyframes chatLauncherPulse {
+  0%, 72%, 100% {
+    transform: scale(1);
+    box-shadow: 0 18px 38px rgba(37, 99, 235, 0.32);
+  }
+  82% {
+    transform: scale(1.05);
+    box-shadow: 0 22px 46px rgba(37, 99, 235, 0.42);
+  }
+}
+
+@keyframes chatLauncherSparkle {
+  0%, 64%, 100% {
+    opacity: 0.55;
+    transform: scale(0.85) rotate(0deg);
+  }
+  74% {
+    opacity: 1;
+    transform: scale(1.25) rotate(14deg);
+  }
+}
+
+.chat-launcher-pulse {
+  animation: chatLauncherPulse 4.5s ease-in-out infinite;
+}
+
+.chat-launcher-sparkle {
+  animation: chatLauncherSparkle 4.5s ease-in-out infinite;
+}
+
+/* ─── Scroll-reveal: single elements ────────────────────── */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Scroll-reveal: staggered grids ────────────────────── */
+/*
+   Parent gets data-reveal-stagger. Children get
+   transitionDelay set via inline style in JSX.
+*/
+[data-reveal-stagger] > * {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.3s ease;
+}
+
+[data-reveal-stagger].is-visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Reduced motion: respect user preference ────────────── */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal],
+  [data-reveal-stagger] > *,
+  .hero-1, .hero-2, .hero-3, .hero-4, .hero-5,
+  .chat-launcher-pulse,
+  .chat-launcher-sparkle {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
