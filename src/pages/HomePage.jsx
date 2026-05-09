@@ -1,6 +1,8 @@
 import Hero from '../components/Hero'
 import TrustBadges from '../components/TrustBadges'
 import Services from '../components/Services'
+import BeforeAfter from '../components/BeforeAfter'
+import VideoSection from '../components/VideoSection'
 import WhyChooseUs from '../components/WhyChooseUs'
 import HowItWorks from '../components/HowItWorks'
 import PricingEstimator from '../components/PricingEstimator'
@@ -17,7 +19,9 @@ export default function HomePage() {
     <>
       <Hero />
       <TrustBadges />
-      <Services limit={4} showViewAll />
+      <Services limit={6} showViewAll />
+      <BeforeAfter />
+      <VideoSection />
       <WhyChooseUs />
       <HowItWorks />
       <PricingEstimator />

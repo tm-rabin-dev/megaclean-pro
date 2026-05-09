@@ -89,31 +89,20 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* ── RIGHT: Photo placeholder ── */}
+          {/* ── RIGHT: Real photo ── */}
           <div className="hidden lg:block relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-slate-100 via-brand-50 to-slate-100 aspect-[4/3] flex items-center justify-center border border-slate-200">
-              {/* Dot pattern */}
-              <div
-                className="absolute inset-0 opacity-25"
-                style={{ backgroundImage: 'radial-gradient(circle, #94a3b8 1px, transparent 1px)', backgroundSize: '24px 24px' }}
-              />
-              {/* Real photo — add when ready */}
+            <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3] border border-slate-200">
               <img
-                src="/images/photo-1.jpg"
-                alt="Professional cleaner in a Sydney home"
+                src="/images/couch-after-01.jpg"
+                alt="Professional cleaning result — restored couch after Clenza clean"
                 className="absolute inset-0 w-full h-full object-cover"
-                onError={(e) => { e.currentTarget.style.display = 'none' }}
               />
-              {/* Placeholder shown when no photo */}
-              <div className="relative text-center px-8">
-                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-md">
-                  <Camera className="w-8 h-8 text-slate-300" />
-                </div>
-                <p className="text-slate-500 font-semibold text-sm">Add your hero photo here</p>
-                <p className="text-slate-400 text-xs mt-1">Replace with photo-1.jpg</p>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent" />
               <div className="absolute top-4 left-4 bg-white/90 text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm border border-slate-100">
                 📍 Sydney, NSW
+              </div>
+              <div className="absolute bottom-4 left-4 bg-white/90 text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm border border-slate-100">
+                ✅ Real job — real results
               </div>
             </div>
 
