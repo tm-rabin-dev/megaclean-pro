@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { Menu, X, Sparkles, Phone, ChevronDown } from 'lucide-react'
 
@@ -11,26 +11,38 @@ function WhatsAppIcon() {
 }
 
 const serviceLinks = [
-  { label: 'End-of-Lease Cleaning', href: '/services#end-of-lease' },
-  { label: 'House Cleaning', href: '/services#house' },
-  { label: 'Deep Cleaning', href: '/services#deep' },
-  { label: 'Office Cleaning', href: '/services#office' },
-  { label: 'Airbnb Cleaning', href: '/services#airbnb' },
   { label: 'Carpet Cleaning', href: '/services#carpet' },
+  { label: 'Mattress Cleaning', href: '/services#mattress' },
+  { label: 'Curtain Cleaning', href: '/services#curtain' },
+  { label: 'Couch Cleaning', href: '/services#couch' },
+  { label: 'Rug Cleaning', href: '/services#rug' },
+  { label: 'Leather Couch Cleaning', href: '/services#leather-couch' },
   { label: 'Window Cleaning', href: '/services#window' },
-  { label: 'Move-In / Move-Out', href: '/services#move' },
+  { label: 'End of Lease Clean', href: '/services#end-of-lease' },
+  { label: 'Carpet Repair', href: '/services#carpet-repair' },
+  { label: 'Carpet Restretching', href: '/services#carpet-restretching' },
 ]
 
 export default function Navbar({ topOffset = 0 }) {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
+  const closeTimer = useRef(null)
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 10)
     window.addEventListener('scroll', fn)
     return () => window.removeEventListener('scroll', fn)
   }, [])
+
+  const handleMouseEnter = () => {
+    clearTimeout(closeTimer.current)
+    setServicesOpen(true)
+  }
+
+  const handleMouseLeave = () => {
+    closeTimer.current = setTimeout(() => setServicesOpen(false), 200)
+  }
 
   const navLinkCls = ({ isActive }) =>
     `text-sm font-medium transition-colors duration-200 ${isActive ? 'text-brand-600' : 'text-slate-700 hover:text-brand-600'}`
@@ -55,7 +67,7 @@ export default function Navbar({ topOffset = 0 }) {
         <nav className="hidden lg:flex items-center gap-7">
           <NavLink to="/" end className={navLinkCls}>Home</NavLink>
 
-          <div className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
+          <div className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <button className="flex items-center gap-1 text-sm font-medium text-slate-700 hover:text-brand-600 transition-colors">
               Services <ChevronDown className={`w-4 h-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
             </button>
