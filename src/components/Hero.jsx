@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Phone, Star, CheckCircle, ArrowRight, Award, Camera, Shield, Zap } from 'lucide-react'
+import { Phone, Star, CheckCircle, ArrowRight, Award, Shield, Zap } from 'lucide-react'
 
 function WhatsAppIcon() {
   return (

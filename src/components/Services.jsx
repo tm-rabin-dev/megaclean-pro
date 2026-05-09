@@ -104,8 +104,8 @@ export const allServices = [
     borderColor: 'border-[#ead8d0]',
     title: 'Bedframe Cleaning',
     tagline: 'Dust-free sleeping space',
-    image: '/images/carpet-after-01.jpg',
-    imageAlt: 'Clean bedroom after professional bedframe cleaning',
+    image: '/images/chairs-after-01.jpg',
+    imageAlt: 'Clean furniture and bedframe after professional cleaning',
     description:
       'Thorough cleaning of bedframes, headboards and bases to remove dust, allergens and stains for a healthier sleeping environment.',
     includes: [
@@ -161,8 +161,8 @@ export const allServices = [
     borderColor: 'border-[#d8ebe4]',
     title: 'End of Lease Clean',
     tagline: 'Get your full bond back',
-    image: '/images/carpet-commercial-after-02.jpg',
-    imageAlt: 'Professional end of lease cleaning result',
+    image: '/images/carpet-after-02.jpg',
+    imageAlt: 'Clean empty room after professional end of lease cleaning',
     description:
       'Comprehensive bond clean following a real-estate–approved checklist. Everything covered to meet landlord and agent standards.',
     includes: [

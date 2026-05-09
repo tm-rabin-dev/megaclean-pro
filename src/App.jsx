@@ -9,8 +9,10 @@ import QuotePage from './pages/QuotePage'
 import NotFoundPage from './pages/NotFoundPage'
 
 function ScrollToTop() {
-  const { pathname } = useLocation()
-  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+  const { pathname, hash } = useLocation()
+  useEffect(() => {
+    if (!hash) window.scrollTo(0, 0)
+  }, [pathname, hash])
   return null
 }
 
