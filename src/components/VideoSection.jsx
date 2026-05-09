@@ -20,7 +20,7 @@ export default function VideoSection() {
   return (
     <section className="py-20 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-14" data-reveal>
+        <div className="text-center mb-14">
           <span className="inline-block text-xs font-bold text-brand-600 bg-brand-100 px-4 py-1.5 rounded-full mb-4 uppercase tracking-widest">
             Watch Us Work
           </span>
@@ -32,7 +32,7 @@ export default function VideoSection() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-3 gap-6" data-reveal-stagger>
+        <div className="grid sm:grid-cols-3 gap-6">
           {videos.map(({ src, title, desc }, i) => (
             <div
               key={title}
