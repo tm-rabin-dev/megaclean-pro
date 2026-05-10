@@ -2,6 +2,7 @@ import Hero from '../components/Hero'
 import TrustBadges from '../components/TrustBadges'
 import Services from '../components/Services'
 import BeforeAfter from '../components/BeforeAfter'
+import TransformationsGallery from '../components/TransformationsGallery'
 import VideoSection from '../components/VideoSection'
 import WhyChooseUs from '../components/WhyChooseUs'
 import HowItWorks from '../components/HowItWorks'
@@ -21,6 +22,7 @@ export default function HomePage() {
       <TrustBadges />
       <Services limit={6} showViewAll />
       <BeforeAfter />
+      <TransformationsGallery />
       <VideoSection />
       <WhyChooseUs />
       <HowItWorks />

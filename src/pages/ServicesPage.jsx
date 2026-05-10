@@ -4,6 +4,7 @@ import { Check, ArrowRight, Calendar } from 'lucide-react'
 import PageHero from '../components/PageHero'
 import CTABanner from '../components/CTABanner'
 import ServiceGallery from '../components/ServiceGallery'
+import TransformationsGallery from '../components/TransformationsGallery'
 import { allServices } from '../components/Services'
 
 export default function ServicesPage() {
@@ -95,6 +96,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      <TransformationsGallery />
       <CTABanner />
     </>
   )
