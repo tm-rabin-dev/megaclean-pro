@@ -1,8 +1,9 @@
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Check, ArrowRight } from 'lucide-react'
+import { Check, ArrowRight, Calendar } from 'lucide-react'
 import PageHero from '../components/PageHero'
 import CTABanner from '../components/CTABanner'
+import ServiceGallery from '../components/ServiceGallery'
 import { allServices } from '../components/Services'
 
 export default function ServicesPage() {
@@ -31,7 +32,7 @@ export default function ServicesPage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8" data-reveal-stagger>
-            {allServices.map(({ id, emoji, bgColor, borderColor, title, tagline, description, includes, image, imageAlt }, i) => (
+            {allServices.map(({ id, emoji, bgColor, borderColor, title, tagline, description, includes, image, imageAlt, gallery }, i) => (
               <div
                 key={id}
                 id={id}
@@ -69,13 +70,24 @@ export default function ServicesPage() {
                     ))}
                   </ul>
 
-                  <Link
-                    to="/get-quote"
-                    className="inline-flex items-center gap-2 text-sm font-bold text-brand-600 hover:text-brand-700"
-                  >
-                    Get a quote for this service
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
+                  <div className="flex flex-col sm:flex-row gap-3 mt-2">
+                    <Link
+                      to="/get-quote"
+                      className="flex items-center justify-center gap-2 px-5 py-3 bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm rounded-xl transition-colors shadow-sm"
+                    >
+                      <Calendar className="w-4 h-4" /> Book This Service
+                    </Link>
+                    <Link
+                      to="/get-quote"
+                      className="flex items-center justify-center gap-2 px-5 py-3 border-2 border-brand-200 hover:border-brand-400 text-brand-600 font-semibold text-sm rounded-xl transition-colors"
+                    >
+                      Get a Free Quote <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
+
+                  {gallery && gallery.length > 0 && (
+                    <ServiceGallery images={gallery} />
+                  )}
                 </div>
               </div>
             ))}

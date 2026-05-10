@@ -20,6 +20,25 @@ export const allServices = [
       'Deodorising treatment',
       'Quick-dry process',
     ],
+    gallery: [
+      '/images/carpet-cleaning-in-progress-01.jpg',
+      '/images/carpet-before-01.jpg',
+      '/images/carpet-after-01.jpg',
+      '/images/carpet-cleaning-in-progress-02.jpg',
+      '/images/carpet-before-02.jpg',
+      '/images/carpet-after-02.jpg',
+      '/images/carpet-cleaning-in-progress-03.jpg',
+      '/images/carpet-before-03.jpg',
+      '/images/carpet-after-03.jpg',
+      '/images/carpet-cleaning-in-progress-04.jpg',
+      '/images/carpet-cleaning-in-progress-05.jpg',
+      '/images/carpet-cleaning-in-progress-06.jpg',
+      '/images/carpet-cleaning-in-progress-07.jpg',
+      '/images/carpet-cleaning-in-progress-08.jpg',
+      '/images/carpet-commercial-after-01.jpg',
+      '/images/carpet-commercial-after-02.jpg',
+      '/images/carpet-commercial-before-01.jpg',
+    ],
   },
   {
     id: 'mattress',
@@ -38,6 +57,9 @@ export const allServices = [
       'Dust mite treatment',
       'Sanitising & deodorising',
       'All mattress types',
+    ],
+    gallery: [
+      '/images/mattress-cleaning-01.jpg',
     ],
   },
   {
@@ -58,6 +80,10 @@ export const allServices = [
       'Stain treatment',
       'Rehang included',
     ],
+    gallery: [
+      '/images/curtain-before-01.jpg',
+      '/images/curtain-after-01.jpg',
+    ],
   },
   {
     id: 'couch',
@@ -76,6 +102,31 @@ export const allServices = [
       'Deep steam extraction',
       'Deodorising treatment',
       'Quick dry process',
+    ],
+    gallery: [
+      '/images/couch-before-01.jpg',
+      '/images/couch-after-01.jpg',
+      '/images/couch-before-02.jpg',
+      '/images/couch-after-02.jpg',
+      '/images/couch-before-03.jpg',
+      '/images/couch-after-03.jpg',
+      '/images/couch-before-04.jpg',
+      '/images/couch-after-04.jpg',
+      '/images/couch-before-05.jpg',
+      '/images/couch-after-05.jpg',
+      '/images/couch-during-01.jpg',
+      '/images/couch-during-02.jpg',
+      '/images/couch-during-03.jpg',
+      '/images/couch-during-04.jpg',
+      '/images/couch-outdoor-before-01.jpg',
+      '/images/couch-outdoor-during-01.jpg',
+      '/images/chairs-after-01.jpg',
+      '/images/chairs-after-02.jpg',
+      '/images/chairs-after-03.jpg',
+      '/images/chairs-before-01.jpg',
+      '/images/chairs-before-02.jpg',
+      '/images/chairs-during-01.jpg',
+      '/images/chairs-during-02.jpg',
     ],
   },
   {
@@ -96,6 +147,9 @@ export const allServices = [
       'Deodorising',
       'Pick-up & delivery available',
     ],
+    gallery: [
+      '/images/rug-cleaning-in-progress-01.jpg',
+    ],
   },
   {
     id: 'bedframe',
@@ -114,6 +168,9 @@ export const allServices = [
       'Dust & allergen removal',
       'Sanitising treatment',
       'All bedframe types',
+    ],
+    gallery: [
+      '/images/chairs-after-01.jpg',
     ],
   },
   {
@@ -134,6 +191,14 @@ export const allServices = [
       'UV protection treatment',
       'Scratch & crack care',
     ],
+    gallery: [
+      '/images/leather-couch-before-01.jpg',
+      '/images/leather-couch-after-01.jpg',
+      '/images/leather-couch-before-02.jpg',
+      '/images/leather-couch-after-02.jpg',
+      '/images/leather-couch-before-03.jpg',
+      '/images/leather-couch-after-03.jpg',
+    ],
   },
   {
     id: 'window',
@@ -152,6 +217,9 @@ export const allServices = [
       'Sliding door tracks',
       'Flyscreen cleaning',
       'High-reach windows',
+    ],
+    gallery: [
+      '/images/window-cleaning-01.jpg',
     ],
   },
   {
@@ -172,6 +240,11 @@ export const allServices = [
       'Carpets, windows & tracks',
       'Bond-back guarantee',
     ],
+    gallery: [
+      '/images/carpet-after-02.jpg',
+      '/images/carpet-commercial-after-02.jpg',
+      '/images/carpet-commercial-after-01.jpg',
+    ],
   },
   {
     id: 'carpet-repair',
@@ -190,6 +263,16 @@ export const allServices = [
       'All carpet types',
       'Colour matching',
       'Same-day available',
+    ],
+    gallery: [
+      '/images/carpet-repair-in-progress-02.jpg',
+      '/images/carpet-repair-in-progress-01.jpg',
+      '/images/carpet-repair-in-progress-03.jpg',
+      '/images/carpet-repair-in-progress-04.jpg',
+      '/images/carpet-repair-in-progress-05.jpg',
+      '/images/carpet-repair-in-progress-06.jpg',
+      '/images/carpet-repair-in-progress-07.jpg',
+      '/images/carpet-damage-01.jpg',
     ],
   },
   {
@@ -210,6 +293,17 @@ export const allServices = [
       'Mould prevention treatment',
       'Full carpet restoration',
     ],
+    gallery: [
+      '/images/flood-damage-07.jpg',
+      '/images/flood-damage-01.jpg',
+      '/images/flood-damage-02.jpg',
+      '/images/flood-damage-03.jpg',
+      '/images/flood-damage-04.jpg',
+      '/images/flood-damage-05.jpg',
+      '/images/flood-damage-06.jpg',
+      '/images/flood-damage-08.jpg',
+      '/images/flood-damage-09.jpg',
+    ],
   },
   {
     id: 'carpet-restretching',
@@ -228,6 +322,12 @@ export const allServices = [
       'Re-laying & re-tacking',
       'All carpet types',
       'Fast turnaround',
+    ],
+    gallery: [
+      '/images/carpet-repair-in-progress-01.jpg',
+      '/images/carpet-repair-in-progress-08.jpg',
+      '/images/carpet-repair-in-progress-09.jpg',
+      '/images/carpet-repair-in-progress-10.jpg',
     ],
   },
 ]
