@@ -14,6 +14,11 @@ const videos = [
     title: 'Upholstery Cleaning',
     desc: 'Restoring fabric chairs to their original clean condition.',
   },
+  {
+    src: '/videos/cleaning-video-04.mp4',
+    title: 'Chair Cleaning',
+    desc: 'Professional steam cleaning of fabric dining chairs — stains lifted and fabric restored.',
+  },
 ]
 
 export default function VideoSection() {
