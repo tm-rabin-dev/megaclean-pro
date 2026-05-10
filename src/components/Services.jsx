@@ -193,6 +193,25 @@ export const allServices = [
     ],
   },
   {
+    id: 'flood-damage',
+    emoji: '💧',
+    bgColor: 'bg-[#f0f6fb]',
+    borderColor: 'border-[#d0e4f0]',
+    title: 'Flood & Water Damage',
+    tagline: 'Fast emergency response',
+    image: '/images/flood-damage-07.jpg',
+    imageAlt: 'Flood damage carpet drying with professional equipment',
+    description:
+      'Emergency water damage restoration for flooded carpets and flooring. We extract water, dry, clean and restore your carpet fast to prevent mould and permanent damage.',
+    includes: [
+      'Emergency same-day response',
+      'Water extraction',
+      'Industrial drying equipment',
+      'Mould prevention treatment',
+      'Full carpet restoration',
+    ],
+  },
+  {
     id: 'carpet-restretching',
     emoji: '📐',
     bgColor: 'bg-[#f4f8f7]',

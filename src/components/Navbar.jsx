@@ -20,6 +20,7 @@ const serviceLinks = [
   { label: 'Window Cleaning', href: '/services#window' },
   { label: 'End of Lease Clean', href: '/services#end-of-lease' },
   { label: 'Carpet Repair', href: '/services#carpet-repair' },
+  { label: 'Flood & Water Damage', href: '/services#flood-damage' },
   { label: 'Carpet Restretching', href: '/services#carpet-restretching' },
 ]
 
