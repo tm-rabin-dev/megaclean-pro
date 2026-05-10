@@ -20,11 +20,11 @@ export default function VideoSection() {
   return (
     <section className="py-16 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-14">
+        <div className="text-center mb-8">
           <span className="inline-block text-xs font-bold text-brand-600 bg-brand-100 px-4 py-1.5 rounded-full mb-4 uppercase tracking-widest">
             Watch Us Work
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">
             Real Jobs. Real Results.
           </h2>
           <p className="text-slate-500 text-lg max-w-2xl mx-auto">

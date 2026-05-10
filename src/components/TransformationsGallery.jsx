@@ -147,18 +147,18 @@ export default function TransformationsGallery() {
   const remaining = transformations.length - INITIAL_COUNT
 
   return (
-    <section className="py-24 px-6 bg-[#f0f6ff]">
+    <section className="py-12 px-6 bg-[#f0f6ff]">
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <span className="inline-block text-xs font-bold text-brand-600 bg-white px-4 py-1.5 rounded-full mb-4 uppercase tracking-widest shadow-sm">
             Real Results
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">
             Real Cleaning Transformations
           </h2>
-          <p className="text-slate-500 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-slate-500 text-base max-w-2xl mx-auto leading-relaxed">
             See the difference professional cleaning makes across carpets, kitchens, bathrooms, upholstery, windows, and full-property cleans.
           </p>
         </div>
@@ -171,7 +171,7 @@ export default function TransformationsGallery() {
         </div>
 
         {/* Reveal button */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-8">
           <button
             onClick={() => setShowAll(v => !v)}
             className="inline-flex items-center gap-2.5 px-8 py-4 bg-white hover:bg-brand-600 hover:text-white text-brand-600 font-bold text-sm rounded-2xl shadow-sm hover:shadow-md border border-brand-100 hover:border-brand-600 transition-all duration-300"
