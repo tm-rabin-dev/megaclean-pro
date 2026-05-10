@@ -15,7 +15,7 @@ allServices.forEach(({ title, gallery }) => {
   })
 })
 
-const INITIAL_SHOW = 18
+const INITIAL_SHOW = 6
 
 export default function AllPhotosGrid() {
   const [showAll, setShowAll] = useState(false)

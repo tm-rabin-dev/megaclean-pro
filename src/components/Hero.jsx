@@ -93,8 +93,8 @@ export default function Hero() {
           <div className="hidden lg:block relative">
             <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3] border border-slate-200">
               <img
-                src="/images/couch-after-01.jpg"
-                alt="Professional cleaning result — restored couch after Clenza clean"
+                src="/images/leather-couch-after-02.jpg"
+                alt="Professional cleaning result — restored leather couch after Clenza clean"
                 className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent" />

@@ -336,7 +336,7 @@ export default function Services({ limit, showViewAll = false }) {
   const displayed = limit ? allServices.slice(0, limit) : allServices
 
   return (
-    <section id="services" className="py-20 px-6 bg-white">
+    <section id="services" className="py-12 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14" data-reveal>
           <span className="inline-block text-xs font-bold text-[#176b61] bg-[#edf7f5] px-4 py-1.5 rounded-full mb-4 uppercase tracking-widest">

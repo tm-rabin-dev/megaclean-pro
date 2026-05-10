@@ -8,7 +8,7 @@ const badges = [
 
 export default function TrustBadges() {
   return (
-    <section className="py-10 px-6 bg-white border-b border-slate-100">
+    <section className="py-6 px-6 bg-white border-b border-slate-100">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
           {badges.map(({ icon, title, desc }) => (
