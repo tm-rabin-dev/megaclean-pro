@@ -32,13 +32,15 @@ export default function ServicesPage() {
       {/* All services */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 items-start" data-reveal-stagger>
-            {allServices.map(({ id, emoji, bgColor, borderColor, title, tagline, description, includes, image, imageAlt, gallery }, i) => (
+          <div className="grid lg:grid-cols-2 gap-8 items-start">
+            {allServices.map(({ id, emoji, bgColor, borderColor, title, tagline, description, includes, image, imageAlt, gallery }, i) => {
+              const isWide = gallery && gallery.length >= 6
+              return (
               <div
                 key={id}
                 id={id}
                 style={{ transitionDelay: `${i * 70}ms` }}
-                className={`scroll-mt-24 rounded-2xl border ${borderColor} ${bgColor} overflow-hidden flex flex-col`}
+                className={`scroll-mt-24 rounded-2xl border ${borderColor} ${bgColor} overflow-hidden flex flex-col ${isWide ? 'lg:col-span-2' : ''}`}
               >
                 {/* Real photo */}
                 <div className="relative h-52 w-full overflow-hidden">
@@ -91,7 +93,8 @@ export default function ServicesPage() {
                   )}
                 </div>
               </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
