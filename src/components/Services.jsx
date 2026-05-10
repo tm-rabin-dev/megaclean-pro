@@ -350,33 +350,25 @@ export default function Services({ limit, showViewAll = false }) {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5" data-reveal-stagger>
-          {displayed.map(({ id, emoji, bgColor, borderColor, title, tagline, description, image, imageAlt }, i) => (
-            <div
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4" data-reveal-stagger>
+          {displayed.map(({ id, emoji, bgColor, borderColor, title, tagline, image, imageAlt }, i) => (
+            <Link
               key={id}
-              id={id}
-              style={{ transitionDelay: `${i * 70}ms` }}
-              className={`group rounded-2xl border ${borderColor} ${bgColor} overflow-hidden hover:shadow-lg hover:shadow-slate-900/8 transition-shadow duration-300 flex flex-col`}
+              to={`/services#${id}`}
+              style={{ transitionDelay: `${i * 50}ms` }}
+              className={`group rounded-2xl border ${borderColor} ${bgColor} overflow-hidden hover:shadow-md transition-all duration-300 flex flex-col`}
             >
-              <div className="relative aspect-[4/3] bg-slate-100">
-                <img src={image} alt={imageAlt} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                <div className="absolute left-4 top-4 flex h-10 w-10 items-center justify-center rounded-xl bg-white/90 text-2xl shadow-sm backdrop-blur-sm">
+              <div className="relative aspect-[4/3] bg-slate-100 overflow-hidden">
+                <img src={image} alt={imageAlt} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <div className="absolute left-3 top-3 flex h-8 w-8 items-center justify-center rounded-lg bg-white/90 text-lg shadow-sm backdrop-blur-sm">
                   {emoji}
                 </div>
               </div>
-              <div className="flex flex-1 flex-col p-5">
-                <div className="text-xs font-bold text-[#176b61] uppercase tracking-wide mb-1">{tagline}</div>
-                <h3 className="text-base font-extrabold text-slate-900 mb-2 leading-snug">{title}</h3>
-                <p className="text-sm text-slate-500 leading-relaxed flex-1">{description}</p>
-                <Link
-                  to="/get-quote"
-                  className="mt-4 flex items-center gap-1.5 text-sm font-semibold text-[#176b61] hover:text-[#11564e] group/link"
-                >
-                  Book this service
-                  <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-                </Link>
+              <div className="p-3.5">
+                <div className="text-[10px] font-bold text-[#176b61] uppercase tracking-wide mb-0.5">{tagline}</div>
+                <h3 className="text-sm font-extrabold text-slate-900 leading-snug">{title}</h3>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

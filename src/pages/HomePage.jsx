@@ -20,7 +20,7 @@ export default function HomePage() {
     <>
       <Hero />
       <TrustBadges />
-      <Services limit={6} showViewAll />
+      <Services />
       <BeforeAfter />
       <TransformationsGallery />
       <VideoSection />

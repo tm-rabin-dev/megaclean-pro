@@ -18,7 +18,7 @@ const videos = [
 
 export default function VideoSection() {
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="py-16 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
           <span className="inline-block text-xs font-bold text-brand-600 bg-brand-100 px-4 py-1.5 rounded-full mb-4 uppercase tracking-widest">
