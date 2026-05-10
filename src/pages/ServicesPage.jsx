@@ -32,7 +32,7 @@ export default function ServicesPage() {
       {/* All services */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8" data-reveal-stagger>
+          <div className="grid lg:grid-cols-2 gap-8 items-start" data-reveal-stagger>
             {allServices.map(({ id, emoji, bgColor, borderColor, title, tagline, description, includes, image, imageAlt, gallery }, i) => (
               <div
                 key={id}
