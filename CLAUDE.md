@@ -4,6 +4,13 @@
 This is the Clenza professional cleaning services website for a Sydney-based cleaning business.
 Built with **Vite + React + Tailwind CSS**. Deployed on **Vercel** via GitHub auto-deploy.
 
+## Stable Checkpoint
+- **Tag:** `v1-stable` — fully working site as of 10 May 2026
+- **Restore command:** `git checkout v1-stable`
+- **GitHub:** https://github.com/tm-rabin-dev/megaclean-pro/releases/tag/v1-stable
+
+---
+
 ## Live URLs
 - **Primary:** https://megaclean-pro.vercel.app
 - **Also works:** https://clenza-cleaning.vercel.app (same project, different URL)
