@@ -158,8 +158,8 @@ export const allServices = [
     borderColor: 'border-[#ead8d0]',
     title: 'Bedframe Cleaning',
     tagline: 'Dust-free sleeping space',
-    image: '/images/chairs-after-01.jpg',
-    imageAlt: 'Clean furniture and bedframe after professional cleaning',
+    image: '/images/bedframe-cleaning-02.jpg',
+    imageAlt: 'Professional bedframe and headboard cleaning with steam extraction',
     description:
       'Thorough cleaning of bedframes, headboards and bases to remove dust, allergens and stains for a healthier sleeping environment.',
     includes: [
@@ -170,7 +170,8 @@ export const allServices = [
       'All bedframe types',
     ],
     gallery: [
-      '/images/chairs-after-01.jpg',
+      '/images/bedframe-cleaning-02.jpg',
+      '/images/bedframe-cleaning-01.jpg',
     ],
   },
   {
