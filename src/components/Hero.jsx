@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Phone, Star, CheckCircle, ArrowRight, Award, Shield, Zap } from 'lucide-react'
+import CompareSlider from './CompareSlider'
 
 function WhatsAppIcon() {
   return (
@@ -91,39 +92,15 @@ export default function Hero() {
 
           {/* ── RIGHT: Before / After ── */}
           <div className="hidden lg:block relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3] border border-slate-200 flex">
-
-              {/* Before */}
-              <div className="relative w-1/2 overflow-hidden">
-                <img
-                  src="/images/leather-couch-before-02.jpg"
-                  alt="Leather couch before cleaning"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-slate-900/20" />
-                <span className="absolute top-3 left-3 bg-slate-900/70 text-white text-xs font-bold px-2.5 py-1 rounded-full backdrop-blur-sm uppercase tracking-wide">
-                  Before
-                </span>
-              </div>
-
-              {/* Divider arrow */}
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow-lg flex items-center justify-center">
-                <span className="text-slate-600 font-bold text-sm">→</span>
-              </div>
-
-              {/* After */}
-              <div className="relative w-1/2 overflow-hidden">
-                <img
-                  src="/images/leather-couch-after-02.jpg"
-                  alt="Leather couch after cleaning"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                <span className="absolute top-3 right-3 bg-emerald-500 text-white text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wide">
-                  After
-                </span>
-              </div>
-
-              <div className="absolute bottom-3 left-3 bg-white/90 text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3] border border-slate-200">
+              <CompareSlider
+                beforeImage="/images/leather-couch-before-02.jpg"
+                afterImage="/images/leather-couch-after-02.jpg"
+                beforeAlt="Leather couch before cleaning"
+                afterAlt="Leather couch after cleaning"
+                className="h-full w-full"
+              />
+              <div className="absolute bottom-3 left-3 z-10 bg-white/90 text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm pointer-events-none">
                 📍 Sydney, NSW
               </div>
             </div>
