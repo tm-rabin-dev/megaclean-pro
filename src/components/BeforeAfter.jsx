@@ -1,3 +1,5 @@
+import { useState, useRef } from 'react'
+
 const transformations = [
   {
     room: 'Carpet',
@@ -22,6 +24,100 @@ const transformations = [
   },
 ]
 
+function CompareSlider({ beforeImage, afterImage, beforeAlt, afterAlt }) {
+  const [position, setPosition] = useState(50)
+  const containerRef = useRef(null)
+  const isDragging = useRef(false)
+
+  const updatePosition = (clientX) => {
+    const el = containerRef.current
+    if (!el) return
+    const rect = el.getBoundingClientRect()
+    const x = Math.max(0, Math.min(clientX - rect.left, rect.width))
+    setPosition((x / rect.width) * 100)
+  }
+
+  const onMouseDown = (e) => {
+    isDragging.current = true
+    updatePosition(e.clientX)
+    e.preventDefault()
+  }
+
+  const onMouseMove = (e) => {
+    if (isDragging.current) updatePosition(e.clientX)
+  }
+
+  const onMouseUp = () => { isDragging.current = false }
+
+  const onTouchStart = (e) => {
+    isDragging.current = true
+    updatePosition(e.touches[0].clientX)
+  }
+
+  const onTouchMove = (e) => {
+    if (isDragging.current) updatePosition(e.touches[0].clientX)
+  }
+
+  const onTouchEnd = () => { isDragging.current = false }
+
+  return (
+    <div
+      ref={containerRef}
+      className="relative h-64 overflow-hidden select-none"
+      style={{ cursor: 'col-resize', touchAction: 'none' }}
+      onMouseDown={onMouseDown}
+      onMouseMove={onMouseMove}
+      onMouseUp={onMouseUp}
+      onMouseLeave={onMouseUp}
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+      onTouchEnd={onTouchEnd}
+    >
+      {/* After image — right side */}
+      <img
+        src={afterImage}
+        alt={afterAlt}
+        className="absolute inset-0 h-full w-full object-cover"
+        draggable={false}
+      />
+
+      {/* Before image — left side, clipped */}
+      <img
+        src={beforeImage}
+        alt={beforeAlt}
+        className="absolute inset-0 h-full w-full object-cover"
+        style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
+        draggable={false}
+      />
+
+      {/* Labels */}
+      <span className="absolute left-3 top-3 z-10 rounded-full bg-slate-950/70 px-3 py-1 text-xs font-bold uppercase tracking-widest text-white pointer-events-none">
+        Before
+      </span>
+      <span className="absolute right-3 top-3 z-10 rounded-full bg-cyan-500 px-3 py-1 text-xs font-bold uppercase tracking-widest text-white pointer-events-none">
+        After
+      </span>
+
+      {/* Divider line */}
+      <div
+        className="absolute top-0 bottom-0 z-20 w-0.5 bg-white/90 pointer-events-none"
+        style={{ left: `${position}%`, transform: 'translateX(-50%)' }}
+      />
+
+      {/* Handle */}
+      <div
+        className="absolute top-1/2 z-30 -translate-y-1/2 -translate-x-1/2 w-10 h-10 bg-white rounded-full shadow-xl flex items-center justify-center pointer-events-none"
+        style={{ left: `${position}%` }}
+      >
+        <svg width="20" height="12" viewBox="0 0 20 12" fill="none">
+          <path d="M6 1L1 6L6 11" stroke="#334155" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M14 1L19 6L14 11" stroke="#334155" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </div>
+    </div>
+  )
+}
+
 export default function BeforeAfter() {
   return (
     <section className="section-pad bg-slate-900 text-white overflow-hidden">
@@ -34,36 +130,19 @@ export default function BeforeAfter() {
             The Clenza Difference
           </h2>
           <p className="text-white/60 text-lg max-w-xl mx-auto">
-            See the transformation. Our cleaners do not just clean - they restore.
+            Drag the slider to see the transformation. Our cleaners do not just clean — they restore.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
           {transformations.map(({ room, beforeImage, afterImage, beforeDesc, afterDesc }) => (
             <div key={room} className="rounded-3xl overflow-hidden bg-white/5 border border-white/10">
-              <div className="relative h-56 flex">
-                <div className="w-1/2 relative overflow-hidden">
-                  <img src={beforeImage} alt={`${room} before Clenza cleaning`} className="h-full w-full object-cover" />
-                  <div className="absolute inset-0 bg-slate-950/20" />
-                  <span className="absolute left-3 top-3 rounded-full bg-slate-950/70 px-3 py-1 text-xs font-bold uppercase tracking-widest text-white">
-                    Before
-                  </span>
-                </div>
-
-                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-                  <div className="w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center">
-                    <span className="text-slate-700 font-extrabold text-sm">to</span>
-                  </div>
-                </div>
-
-                <div className="w-1/2 relative overflow-hidden">
-                  <img src={afterImage} alt={`${room} after Clenza cleaning`} className="h-full w-full object-cover" />
-                  <div className="absolute inset-0 bg-cyan-950/10" />
-                  <span className="absolute right-3 top-3 rounded-full bg-cyan-500 px-3 py-1 text-xs font-bold uppercase tracking-widest text-white">
-                    After
-                  </span>
-                </div>
-              </div>
+              <CompareSlider
+                beforeImage={beforeImage}
+                afterImage={afterImage}
+                beforeAlt={`${room} before Clenza cleaning`}
+                afterAlt={`${room} after Clenza cleaning`}
+              />
 
               <div className="p-5">
                 <h3 className="font-bold text-white mb-3">{room}</h3>
