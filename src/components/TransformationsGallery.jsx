@@ -13,7 +13,7 @@ const transformations = [
     service: 'Carpet Cleaning',
     description: 'Badly stained hallway carpet restored to a clean, fresh condition.',
     before: '/images/carpet-before-02.jpg',
-    after: '/images/carpet-after-02.jpg',
+    after: '/images/carpet-after-02-new.png',
   },
   {
     service: 'Carpet Cleaning',
@@ -91,19 +91,27 @@ const transformations = [
     before: '/images/curtain-before-01.jpg',
     after: '/images/curtain-after-01.jpg',
   },
-  // ── PLACEHOLDERS (add photos when client provides them) ──
-  // {
-  //   service: 'Kitchen Deep Clean',
-  //   description: 'Kitchen surfaces degreased, sanitised, and polished.',
-  //   before: '/images/kitchen-before-01.jpg',   ← ADD THIS FILE
-  //   after: '/images/kitchen-after-01.jpg',     ← ADD THIS FILE
-  // },
-  // {
-  //   service: 'Bathroom Deep Clean',
-  //   description: 'Bathroom tiles, grout, and glass restored to a fresh finish.',
-  //   before: '/images/bathroom-before-01.jpg',  ← ADD THIS FILE
-  //   after: '/images/bathroom-after-01.jpg',    ← ADD THIS FILE
-  // },
+  // ── MATTRESS ─────────────────────────────────────────────
+  {
+    service: 'Mattress Cleaning',
+    description: 'Heavily stained mattress deep cleaned, sanitised and restored.',
+    before: '/images/mattress-before-01.png',
+    after: '/images/mattress-after-01.png',
+  },
+  // ── RUG ──────────────────────────────────────────────────
+  {
+    service: 'Rug Cleaning',
+    description: 'Dull, dirty area rug restored — colours lifted and deep soil removed.',
+    before: '/images/rug-before-01.png',
+    after: '/images/rug-after-01.png',
+  },
+  // ── WINDOW ───────────────────────────────────────────────
+  {
+    service: 'Window Cleaning',
+    description: 'Grimy streaked windows transformed to a streak-free, crystal clear finish.',
+    before: '/images/window-before-01.png',
+    after: '/images/window-after-01.png',
+  },
 ]
 
 const INITIAL_COUNT = 4

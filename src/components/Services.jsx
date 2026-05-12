@@ -26,7 +26,7 @@ export const allServices = [
       '/images/carpet-after-01.jpg',
       '/images/carpet-cleaning-in-progress-02.jpg',
       '/images/carpet-before-02.jpg',
-      '/images/carpet-after-02.jpg',
+      '/images/carpet-after-02-new.png',
       '/images/carpet-cleaning-in-progress-03.jpg',
       '/images/carpet-before-03.jpg',
       '/images/carpet-after-03.jpg',
@@ -59,6 +59,8 @@ export const allServices = [
       'All mattress types',
     ],
     gallery: [
+      '/images/mattress-before-01.png',
+      '/images/mattress-after-01.png',
       '/images/mattress-cleaning-01.jpg',
     ],
   },
@@ -148,6 +150,8 @@ export const allServices = [
       'Pick-up & delivery available',
     ],
     gallery: [
+      '/images/rug-before-01.png',
+      '/images/rug-after-01.png',
       '/images/rug-cleaning-in-progress-01.jpg',
     ],
   },
@@ -220,6 +224,8 @@ export const allServices = [
       'High-reach windows',
     ],
     gallery: [
+      '/images/window-before-01.png',
+      '/images/window-after-01.png',
       '/images/window-cleaning-01.jpg',
     ],
   },
@@ -242,9 +248,9 @@ export const allServices = [
       'Bond-back guarantee',
     ],
     gallery: [
-      '/images/carpet-after-02.jpg',
-      '/images/carpet-commercial-after-02.jpg',
+      '/images/services/end-of-lease-cleaning.jpg',
       '/images/carpet-commercial-after-01.jpg',
+      '/images/carpet-commercial-after-02.jpg',
     ],
   },
   {
@@ -296,6 +302,7 @@ export const allServices = [
     ],
     gallery: [
       '/images/flood-damage-07.jpg',
+      '/images/carpet-after-02.jpg',
       '/images/flood-damage-01.jpg',
       '/images/flood-damage-02.jpg',
       '/images/flood-damage-03.jpg',
