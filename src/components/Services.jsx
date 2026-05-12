@@ -69,8 +69,8 @@ export const allServices = [
     borderColor: 'border-[#ddebe8]',
     title: 'Curtain Cleaning',
     tagline: 'Fresh, dust-free curtains',
-    image: '/images/curtain-before-01.jpg',
-    imageAlt: 'Curtain cleaning before and after',
+    image: '/images/curtain-after-01.jpg',
+    imageAlt: 'Clean bright curtains after professional cleaning',
     description:
       'Professional on-site or off-site curtain cleaning. We remove dust, allergens and stains without damaging delicate fabrics.',
     includes: [
@@ -92,8 +92,8 @@ export const allServices = [
     borderColor: 'border-[#d7eee7]',
     title: 'Couch Cleaning',
     tagline: 'Restore your sofa',
-    image: '/images/couch-before-01.jpg',
-    imageAlt: 'Professional couch and upholstery cleaning',
+    image: '/images/couch-after-01.jpg',
+    imageAlt: 'Clean restored couch after professional upholstery cleaning',
     description:
       'Fabric and upholstery cleaning that removes years of built-up dirt, stains and odours. Your couch will look and feel brand new.',
     includes: [
@@ -180,8 +180,8 @@ export const allServices = [
     borderColor: 'border-[#dbe9ec]',
     title: 'Leather Couch Cleaning',
     tagline: 'Restore & protect leather',
-    image: '/images/leather-couch-before-01.jpg',
-    imageAlt: 'Leather couch before and after professional cleaning',
+    image: '/images/leather-couch-after-01.jpg',
+    imageAlt: 'Restored leather couch after professional cleaning and conditioning',
     description:
       'Specialist leather cleaning and conditioning to restore shine, remove stains and protect your leather furniture from cracking.',
     includes: [
@@ -229,8 +229,8 @@ export const allServices = [
     borderColor: 'border-[#d8ebe4]',
     title: 'End of Lease Clean',
     tagline: 'Get your full bond back',
-    image: '/images/carpet-after-02.jpg',
-    imageAlt: 'Clean empty room after professional end of lease cleaning',
+    image: '/images/services/end-of-lease-cleaning.jpg',
+    imageAlt: 'Clean empty apartment after professional end of lease cleaning',
     description:
       'Comprehensive bond clean following a real-estate–approved checklist. Everything covered to meet landlord and agent standards.',
     includes: [
