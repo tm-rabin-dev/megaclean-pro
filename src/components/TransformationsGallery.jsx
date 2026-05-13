@@ -50,7 +50,7 @@ const transformations = [
   {
     service: 'Couch Cleaning',
     description: 'Beige couch deep cleaned with hot-water extraction and deodorised.',
-    before: '/images/couch-before-05.jpg',
+    before: '/images/couch-before-05-new.jpg',
     after: '/images/couch-after-05.jpg',
   },
   // ── LEATHER COUCH ────────────────────────────────────────

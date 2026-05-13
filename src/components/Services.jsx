@@ -114,7 +114,7 @@ export const allServices = [
       '/images/couch-after-03.jpg',
       '/images/couch-before-04.jpg',
       '/images/couch-after-04.jpg',
-      '/images/couch-before-05.jpg',
+      '/images/couch-before-05-new.jpg',
       '/images/couch-after-05.jpg',
       '/images/couch-during-01.jpg',
       '/images/couch-during-02.jpg',
