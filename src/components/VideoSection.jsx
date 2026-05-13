@@ -37,7 +37,7 @@ export default function VideoSection() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {videos.map(({ src, title, desc }, i) => (
             <div
               key={title}
