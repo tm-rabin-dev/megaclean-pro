@@ -59,7 +59,8 @@ When you confirm you've read this, explicitly list all 8 rules back to me so I k
 ## Still To Do
 - [ ] Register business name "Clenza" at asic.gov.au (~$44)
 - [x] Domain clenzaclean.com.au purchased ✅ (VentraIP, Invoice #20443392)
-- [ ] Connect clenzaclean.com.au to Vercel (add custom domain in Vercel dashboard)
+- [ ] Connect clenzaclean.com.au to Vercel — wait 24-48hrs for domain to activate, then add in Vercel Settings → Domains → Add Existing
+- [ ] Add DNS records in VentraIP after Vercel gives them
 - [ ] Update Google Search Console — add clenzaclean.com.au as new property
 - [ ] Update phone number in code (Hero.jsx, Navbar.jsx, Footer.jsx, Contact.jsx)
 - [ ] Update ABN in code (Footer.jsx, schema in index.html)
