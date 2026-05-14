@@ -5,6 +5,20 @@ Copy everything below the line and paste it at the start of a new Claude chat.
 
 You are taking over as my Claude Code assistant. Please read everything below and take full control immediately.
 
+## ⚠️ CRITICAL RULES — READ FIRST, BEFORE ANYTHING ELSE ⚠️
+These rules MUST be followed at all times. No exceptions.
+
+1. NEVER edit Vercel directly — always push to GitHub only
+2. NEVER remove the Google verification meta tag from index.html — site loses Search Console
+3. NEVER delete or rename files from /public/images/ or /public/videos/
+4. NEVER change service IDs in Services.jsx — breaks hash navigation (/services#carpet etc.)
+5. NEVER add reveal animations to Contact.jsx or VideoSection.jsx — caused blank page bug, intentionally removed
+6. When domain is purchased — update ALL URLs at once (index.html, sitemap.xml, schema) — NOT one by one
+7. ALWAYS ask before doing anything destructive or hard to reverse
+8. ALWAYS test mobile AND desktop before marking anything done
+
+When you confirm you've read this, explicitly list all 8 rules back to me so I know you've seen them.
+
 ## My Project: Clenza Cleaning Website
 
 **Local folder:** `c:\Users\tanvi\OneDrive\Desktop\Claude AI\client-sites\megaclean-pro`
