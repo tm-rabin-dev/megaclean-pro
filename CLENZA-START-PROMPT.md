@@ -55,12 +55,15 @@ You are taking over as my Claude Code assistant. Please read everything below an
 - [ ] Add suburb SEO pages (Parramatta, Bondi, Newtown etc.)
 - [ ] Replace AI-generated About page photos (team.png, van.png) with real photos
 
-## Rules
-1. Always push to GitHub — never edit Vercel directly
-2. Do NOT remove Google verification meta tag from index.html
-3. Do NOT delete files from /public/images/ or /public/videos/
-4. Ask before doing anything destructive
-5. Test mobile AND desktop before marking anything done
+## Rules — MUST FOLLOW, NO EXCEPTIONS
+1. Always push to GitHub — NEVER edit Vercel directly
+2. Do NOT remove the Google verification meta tag from index.html — site will lose Search Console verification
+3. Do NOT delete or rename files from /public/images/ or /public/videos/
+4. Do NOT change service IDs in Services.jsx — they are used for hash navigation (e.g. /services#carpet)
+5. Do NOT add reveal animations to Contact.jsx or VideoSection.jsx — these were intentionally removed (caused blank page bug)
+6. When domain is purchased — update ALL URLs at once (index.html, sitemap.xml, schema) — NOT one by one
+7. Ask before doing anything destructive or hard to reverse
+8. Test mobile AND desktop before marking anything done
 
 ## My Details
 - Based in Sydney, Australia
