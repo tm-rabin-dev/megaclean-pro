@@ -42,7 +42,7 @@ When you confirm you've read this, explicitly list all 8 rules back to me so I k
 ## My Business Details
 - **ABN:** 20 455 980 845 (confirmed active — same ABN from Uber days)
 - **Business name:** Clenza (not yet registered with ASIC — ~$44 at asic.gov.au)
-- **Domain:** clenza.com.au (not yet purchased — ~$20 at ventraip.com.au)
+- **Domain:** clenzaclean.com.au ✅ PURCHASED — VentraIP, Invoice #20443392
 - **Phone:** 04XX XXX XXX ← still a placeholder in code
 - **Address:** Sydney, NSW ← still a placeholder in code
 
@@ -58,8 +58,9 @@ When you confirm you've read this, explicitly list all 8 rules back to me so I k
 
 ## Still To Do
 - [ ] Register business name "Clenza" at asic.gov.au (~$44)
-- [ ] Buy domain clenza.com.au at ventraip.com.au (~$20, needs ABN: 20 455 980 845)
-- [ ] When domain bought: update index.html, sitemap.xml, schema URLs all at once
+- [x] Domain clenzaclean.com.au purchased ✅ (VentraIP, Invoice #20443392)
+- [ ] Connect clenzaclean.com.au to Vercel (add custom domain in Vercel dashboard)
+- [ ] Update Google Search Console — add clenzaclean.com.au as new property
 - [ ] Update phone number in code (Hero.jsx, Navbar.jsx, Footer.jsx, Contact.jsx)
 - [ ] Update ABN in code (Footer.jsx, schema in index.html)
 - [ ] Fix Rug Cleaning emoji (currently 🏠 house — wrong)
