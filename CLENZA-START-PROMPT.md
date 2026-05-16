@@ -13,7 +13,7 @@ These rules MUST be followed at all times. No exceptions.
 3. NEVER delete or rename files from /public/images/ or /public/videos/
 4. NEVER change service IDs in Services.jsx — breaks hash navigation (/services#carpet etc.)
 5. NEVER add reveal animations to Contact.jsx or VideoSection.jsx — caused blank page bug, intentionally removed
-6. When domain is purchased — update ALL URLs at once (index.html, sitemap.xml, robots.txt, schema) — NOT one by one
+6. When updating URLs — update ALL at once (index.html, sitemap.xml, robots.txt, schema) — NOT one by one
 7. ALWAYS ask before doing anything destructive or hard to reverse
 8. ALWAYS test mobile AND desktop before marking anything done
 9. ALWAYS give direct full URLs when referencing any website or tool — never just domain names
@@ -52,9 +52,16 @@ When you confirm you've read this, explicitly list all 9 rules back to me so I k
 
 ## My Business Details
 - **ABN:** 20 455 980 845 ✅ confirmed active
-- **Business name:** Clenza — registration IN PROGRESS at https://connectonline.asic.gov.au (~$44 at ASIC)
+- **Business name:** "Clenza Cleaning" — registration IN PROGRESS at https://register.business.gov.au
+  - Reference number: **2605-OY-4997**
+  - Signed in as: tanvirpjwtp@gmail.com
+  - Step reached: Step 1 "Getting started" — continue from https://register.business.gov.au/registration/gettingstarted?appid=3884997
+  - Note: "Clenza" name blocked — CLENZA PTY LTD (ACN 697 393 098) already exists as a company
+  - "Clenza Cleaning" confirmed available (only similar name is CLEANAZ CLEANING — different enough)
 - **Domain:** clenzaclean.com.au ✅ PURCHASED — VentraIP, Invoice #20443392
 - **Phone:** 0415 410 507 ✅ updated in code
+- **WhatsApp:** https://wa.me/61415410507
+- **Email:** hello@clenza.com.au
 - **Address:** Sydney, NSW ← still a general placeholder in code
 
 ## Phone / WhatsApp locations in code
@@ -64,7 +71,6 @@ All updated to real number — if phone changes again, update these files:
 - `src/components/Navbar.jsx` (desktop + mobile)
 - `src/components/Footer.jsx`
 - `index.html` (schema)
-- WhatsApp link: `https://wa.me/61415410507`
 
 ## What Was Done — Session 14 May 2026
 - ✅ All service card images fixed (correct photos for each service)
@@ -85,13 +91,15 @@ All updated to real number — if phone changes again, update these files:
 - ✅ couch-after-05-new.jpg committed to repo
 - ✅ Phone number 0415 410 507 added to all components
 - ✅ ABN 20 455 980 845 added to Footer and schema
+- ✅ Business name search done — "Clenza Cleaning" is available
+- ✅ Business name registration started at register.business.gov.au (ref: 2605-OY-4997, step 1)
 
 ## Still To Do
-- [ ] Complete Clenza business name registration at https://connectonline.asic.gov.au (~$44) — IN PROGRESS
+- [ ] Complete "Clenza Cleaning" business name registration — resume at https://register.business.gov.au/registration/gettingstarted?appid=3884997 (ref: 2605-OY-4997) ← NEXT UP
 - [ ] Add clenzaclean.com.au as new property in Google Search Console: https://search.google.com/search-console
 - [ ] Set up Google Business Profile: https://business.google.com
 - [ ] Set up Google Ads account: https://ads.google.com
-- [ ] Update address in code (Hero, Footer, schema) — suburb still a placeholder
+- [ ] Update address in code (suburb still a placeholder in Hero, Footer, schema)
 - [ ] Fix Rug Cleaning emoji (currently 🏠 house — wrong)
 - [ ] Check Carpet Repair card image
 - [ ] Get real customer reviews on Google
@@ -116,5 +124,6 @@ All updated to real number — if phone changes again, update these files:
 - GitHub user: tm-rabin-dev
 - Vercel account: tanvirpjwtp@gmail.com
 - ABN: 20 455 980 845
+- Phone: 0415 410 507
 
 Please confirm you've read everything and tell me the current status of the site.
