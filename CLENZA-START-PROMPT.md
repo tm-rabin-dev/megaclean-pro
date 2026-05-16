@@ -13,17 +13,19 @@ These rules MUST be followed at all times. No exceptions.
 3. NEVER delete or rename files from /public/images/ or /public/videos/
 4. NEVER change service IDs in Services.jsx — breaks hash navigation (/services#carpet etc.)
 5. NEVER add reveal animations to Contact.jsx or VideoSection.jsx — caused blank page bug, intentionally removed
-6. When domain is purchased — update ALL URLs at once (index.html, sitemap.xml, schema) — NOT one by one
+6. When domain is purchased — update ALL URLs at once (index.html, sitemap.xml, robots.txt, schema) — NOT one by one
 7. ALWAYS ask before doing anything destructive or hard to reverse
 8. ALWAYS test mobile AND desktop before marking anything done
+9. ALWAYS give direct full URLs when referencing any website or tool — never just domain names
 
-When you confirm you've read this, explicitly list all 8 rules back to me so I know you've seen them.
+When you confirm you've read this, explicitly list all 9 rules back to me so I know you've seen them.
 
 ## My Project: Clenza Cleaning Website
 
 **Local folder:** `c:\Users\tanvi\OneDrive\Desktop\Claude AI\client-sites\megaclean-pro`
 **GitHub:** https://github.com/tm-rabin-dev/megaclean-pro (branch: master)
-**Live site:** https://megaclean-pro.vercel.app
+**Live site:** https://clenzaclean.com.au
+**Backdoor URL:** https://megaclean-pro.vercel.app (still works)
 **Stack:** Vite + React + Tailwind CSS
 **Deployment:** Every push to `master` auto-deploys to Vercel. Never edit Vercel directly.
 
@@ -31,24 +33,38 @@ When you confirm you've read this, explicitly list all 8 rules back to me so I k
 `c:\Users\tanvi\OneDrive\Desktop\Claude AI\client-sites\megaclean-pro\CLAUDE.md`
 
 ## Current State (as of 16 May 2026)
-- Site is live, healthy, and fully built
-- 12 services with real photos, galleries and before/after sliders
-- Interactive CompareSlider used in Hero, BeforeAfter section, and TransformationsGallery
-- SEO configured (Google Search Console verified, schema markup, sitemap)
+- Site is live and healthy at clenzaclean.com.au ✅
+- SSL certificate active — padlock showing on both clenzaclean.com.au and www.clenzaclean.com.au ✅
+- Both clenzaclean.com.au and www.clenzaclean.com.au show Valid Configuration in Vercel ✅
+- megaclean-pro.vercel.app still works (back door) ✅
+- 12 services with real photos, galleries and before/after sliders ✅
+- Interactive CompareSlider used in Hero, BeforeAfter section, and TransformationsGallery ✅
+- SEO configured (Google Search Console verified, schema markup, sitemap) ✅
+- All URLs in code (index.html, sitemap.xml, robots.txt, schema) updated to clenzaclean.com.au ✅
 - GitHub connected and auto-deploying to Vercel ✅
 - Stable backup tag: `v1-stable` (restore: `git checkout v1-stable`)
-- Domain clenzaclean.com.au is LIVE and connected to Vercel ✅
-- SSL certificate active — site loads with padlock at clenzaclean.com.au ✅
-- Both clenzaclean.com.au and www.clenzaclean.com.au show Valid Configuration in Vercel ✅
-- megaclean-pro.vercel.app still works (back door) but clenzaclean.com.au is the real domain
-- Code URLs (index.html, sitemap.xml, schema) still say megaclean-pro.vercel.app — NOT yet updated
+- Phone number updated to 0415 410 507 in all components ✅
+- ABN updated to 20 455 980 845 in Footer.jsx and index.html schema ✅
+
+## DNS (VentraIP)
+- A record: clenzaclean.com.au → 216.198.79.1
+- CNAME: www → cname.vercel-dns.com (working — Vercel recommends 03a88abd3c34c104.vercel-dns-017.com but not urgent)
 
 ## My Business Details
-- **ABN:** 20 455 980 845 (confirmed active — same ABN from Uber days)
-- **Business name:** Clenza (not yet registered with ASIC — ~$44 at asic.gov.au)
+- **ABN:** 20 455 980 845 ✅ confirmed active
+- **Business name:** Clenza — registration IN PROGRESS at https://connectonline.asic.gov.au (~$44 at ASIC)
 - **Domain:** clenzaclean.com.au ✅ PURCHASED — VentraIP, Invoice #20443392
-- **Phone:** 04XX XXX XXX ← still a placeholder in code
-- **Address:** Sydney, NSW ← still a placeholder in code
+- **Phone:** 0415 410 507 ✅ updated in code
+- **Address:** Sydney, NSW ← still a general placeholder in code
+
+## Phone / WhatsApp locations in code
+All updated to real number — if phone changes again, update these files:
+- `src/components/AnnouncementBar.jsx`
+- `src/components/Hero.jsx`
+- `src/components/Navbar.jsx` (desktop + mobile)
+- `src/components/Footer.jsx`
+- `index.html` (schema)
+- WhatsApp link: `https://wa.me/61415410507`
 
 ## What Was Done — Session 14 May 2026
 - ✅ All service card images fixed (correct photos for each service)
@@ -62,27 +78,26 @@ When you confirm you've read this, explicitly list all 8 rules back to me so I k
 
 ## What Was Done — Session 16 May 2026
 - ✅ Domain clenzaclean.com.au purchased from VentraIP (Invoice #20443392)
-- ✅ Old conflicting A records (103.42.108.46) deleted from VentraIP DNS
-- ✅ A record added in VentraIP: clenzaclean.com.au → 216.198.79.1
-- ✅ CNAME record added in VentraIP: www → 03a88abd3c34c104.vercel-dns-017.com
-- ✅ Both clenzaclean.com.au and www.clenzaclean.com.au show Valid Configuration in Vercel
-- ✅ SSL certificate generated — site is secure with padlock
+- ✅ DNS configured in VentraIP — A record + CNAME both done
+- ✅ SSL certificate fixed (was "Failed To Generate Cert" — wrong CNAME value, corrected to cname.vercel-dns.com)
+- ✅ Both domains show Valid Configuration in Vercel
+- ✅ All code URLs updated to clenzaclean.com.au (index.html, sitemap.xml, robots.txt)
+- ✅ couch-after-05-new.jpg committed to repo
+- ✅ Phone number 0415 410 507 added to all components
+- ✅ ABN 20 455 980 845 added to Footer and schema
 
 ## Still To Do
-- [ ] Register business name "Clenza" at asic.gov.au (~$44)
-- [x] Domain clenzaclean.com.au purchased ✅ (VentraIP, Invoice #20443392)
-- [x] Connect clenzaclean.com.au to Vercel ✅ — Valid Configuration, SSL active
-- [x] Add DNS records in VentraIP ✅ — A record + CNAME both done
-- [ ] **Update all URLs in code to clenzaclean.com.au** — index.html (canonical, OG, schema), sitemap.xml (do ALL at once, rule #6) ← NEXT UP
-- [ ] Update Google Search Console — add clenzaclean.com.au as new property
-- [ ] Update phone number in code (Hero.jsx, Navbar.jsx, Footer.jsx, Contact.jsx)
-- [ ] Update ABN in code (Footer.jsx, schema in index.html)
+- [ ] Complete Clenza business name registration at https://connectonline.asic.gov.au (~$44) — IN PROGRESS
+- [ ] Add clenzaclean.com.au as new property in Google Search Console: https://search.google.com/search-console
+- [ ] Set up Google Business Profile: https://business.google.com
+- [ ] Set up Google Ads account: https://ads.google.com
+- [ ] Update address in code (Hero, Footer, schema) — suburb still a placeholder
 - [ ] Fix Rug Cleaning emoji (currently 🏠 house — wrong)
 - [ ] Check Carpet Repair card image
-- [ ] Set up Google Business Profile
 - [ ] Get real customer reviews on Google
 - [ ] Add suburb SEO pages (Parramatta, Bondi, Newtown etc.)
 - [ ] Replace AI-generated About page photos (team.png, van.png) with real photos
+- [ ] Consider updating www CNAME in VentraIP to 03a88abd3c34c104.vercel-dns-017.com (Vercel recommended, optional)
 
 ## Rules — MUST FOLLOW, NO EXCEPTIONS
 1. Always push to GitHub — NEVER edit Vercel directly
@@ -90,9 +105,10 @@ When you confirm you've read this, explicitly list all 8 rules back to me so I k
 3. Do NOT delete or rename files from /public/images/ or /public/videos/
 4. Do NOT change service IDs in Services.jsx — they are used for hash navigation (e.g. /services#carpet)
 5. Do NOT add reveal animations to Contact.jsx or VideoSection.jsx — these were intentionally removed (caused blank page bug)
-6. When domain is purchased — update ALL URLs at once (index.html, sitemap.xml, schema) — NOT one by one
+6. When updating URLs — update ALL at once (index.html, sitemap.xml, robots.txt, schema) — NOT one by one
 7. Ask before doing anything destructive or hard to reverse
 8. Test mobile AND desktop before marking anything done
+9. Always give direct full URLs — never just domain names
 
 ## My Details
 - Based in Sydney, Australia
