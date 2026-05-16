@@ -30,14 +30,18 @@ When you confirm you've read this, explicitly list all 8 rules back to me so I k
 ## Read this file first for full project context:
 `c:\Users\tanvi\OneDrive\Desktop\Claude AI\client-sites\megaclean-pro\CLAUDE.md`
 
-## Current State (as of 14 May 2026)
+## Current State (as of 16 May 2026)
 - Site is live, healthy, and fully built
 - 12 services with real photos, galleries and before/after sliders
 - Interactive CompareSlider used in Hero, BeforeAfter section, and TransformationsGallery
 - SEO configured (Google Search Console verified, schema markup, sitemap)
 - GitHub connected and auto-deploying to Vercel ✅
-- Only ONE Vercel URL: megaclean-pro.vercel.app ✅
 - Stable backup tag: `v1-stable` (restore: `git checkout v1-stable`)
+- Domain clenzaclean.com.au is LIVE and connected to Vercel ✅
+- SSL certificate active — site loads with padlock at clenzaclean.com.au ✅
+- Both clenzaclean.com.au and www.clenzaclean.com.au show Valid Configuration in Vercel ✅
+- megaclean-pro.vercel.app still works (back door) but clenzaclean.com.au is the real domain
+- Code URLs (index.html, sitemap.xml, schema) still say megaclean-pro.vercel.app — NOT yet updated
 
 ## My Business Details
 - **ABN:** 20 455 980 845 (confirmed active — same ABN from Uber days)
@@ -46,7 +50,7 @@ When you confirm you've read this, explicitly list all 8 rules back to me so I k
 - **Phone:** 04XX XXX XXX ← still a placeholder in code
 - **Address:** Sydney, NSW ← still a placeholder in code
 
-## What Was Done This Session (14 May 2026)
+## What Was Done — Session 14 May 2026
 - ✅ All service card images fixed (correct photos for each service)
 - ✅ Bedframe, mattress, rug, window before/after photos added
 - ✅ carpet-after-02.jpg moved to correct flood damage gallery
@@ -56,11 +60,20 @@ When you confirm you've read this, explicitly list all 8 rules back to me so I k
 - ✅ Couch pair 5 fixed with proper before photo
 - ✅ AllPhotosGrid restored to original flat layout
 
+## What Was Done — Session 16 May 2026
+- ✅ Domain clenzaclean.com.au purchased from VentraIP (Invoice #20443392)
+- ✅ Old conflicting A records (103.42.108.46) deleted from VentraIP DNS
+- ✅ A record added in VentraIP: clenzaclean.com.au → 216.198.79.1
+- ✅ CNAME record added in VentraIP: www → 03a88abd3c34c104.vercel-dns-017.com
+- ✅ Both clenzaclean.com.au and www.clenzaclean.com.au show Valid Configuration in Vercel
+- ✅ SSL certificate generated — site is secure with padlock
+
 ## Still To Do
 - [ ] Register business name "Clenza" at asic.gov.au (~$44)
 - [x] Domain clenzaclean.com.au purchased ✅ (VentraIP, Invoice #20443392)
-- [ ] Connect clenzaclean.com.au to Vercel — wait 24-48hrs for domain to activate, then add in Vercel Settings → Domains → Add Existing
-- [ ] Add DNS records in VentraIP after Vercel gives them
+- [x] Connect clenzaclean.com.au to Vercel ✅ — Valid Configuration, SSL active
+- [x] Add DNS records in VentraIP ✅ — A record + CNAME both done
+- [ ] **Update all URLs in code to clenzaclean.com.au** — index.html (canonical, OG, schema), sitemap.xml (do ALL at once, rule #6) ← NEXT UP
 - [ ] Update Google Search Console — add clenzaclean.com.au as new property
 - [ ] Update phone number in code (Hero.jsx, Navbar.jsx, Footer.jsx, Contact.jsx)
 - [ ] Update ABN in code (Footer.jsx, schema in index.html)
