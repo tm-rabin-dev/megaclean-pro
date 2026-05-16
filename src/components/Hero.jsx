@@ -63,13 +63,13 @@ export default function Hero() {
                 Get Instant Quote <ArrowRight className="w-5 h-5" />
               </Link>
               <a
-                href="tel:04XXXXXXXX"
+                href="tel:+61415410507"
                 className="flex items-center justify-center gap-2 px-6 py-4 border-2 border-slate-200 hover:border-brand-400 text-slate-700 hover:text-brand-600 font-semibold text-base rounded-xl transition-colors"
               >
-                <Phone className="w-4 h-4" /> Call 04XX XXX XXX
+                <Phone className="w-4 h-4" /> Call 0415 410 507
               </a>
               <a
-                href="https://wa.me/614XXXXXXXXX"
+                href="https://wa.me/61415410507"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-6 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-base rounded-xl transition-colors"

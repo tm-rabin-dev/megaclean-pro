@@ -40,8 +40,8 @@ export default function Footer() {
             Sydney's trusted professional cleaning service. Verified cleaners, transparent pricing, and a 100% satisfaction guarantee.
           </p>
           <div className="flex flex-col gap-2 text-sm">
-            <a href="tel:04XXXXXXXX" className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors">
-              <Phone className="w-4 h-4 text-brand-400" /> 04XX XXX XXX
+            <a href="tel:+61415410507" className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors">
+              <Phone className="w-4 h-4 text-brand-400" /> 0415 410 507
             </a>
             <a href="mailto:hello@clenza.com.au" className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors">
               <Mail className="w-4 h-4 text-brand-400" /> hello@clenza.com.au
@@ -108,7 +108,7 @@ export default function Footer() {
 
       <div className="border-t border-white/10 px-6 py-6">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-slate-500 text-xs">
-          <p>© {year} Clenza. All rights reserved. ABN: XX XXX XXX XXX</p>
+          <p>© {year} Clenza. All rights reserved. ABN: 20 455 980 845</p>
           <p>Professional cleaning services across Sydney, NSW</p>
         </div>
       </div>

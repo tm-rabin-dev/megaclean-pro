@@ -14,12 +14,12 @@ export default function AnnouncementBar({ onDismiss }) {
       <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm font-medium pr-8">
         <span className="text-brand-200 font-bold tracking-wide">✓ Same-day available</span>
         <span className="text-white/30 hidden sm:inline">·</span>
-        <a href="tel:04XXXXXXXX" className="text-white hover:text-brand-200 transition-colors">
-          📞 04XX XXX XXX
+        <a href="tel:+61415410507" className="text-white hover:text-brand-200 transition-colors">
+          📞 0415 410 507
         </a>
         <span className="text-white/30 hidden sm:inline">·</span>
         <a
-          href="https://wa.me/614XXXXXXXXX"
+          href="https://wa.me/61415410507"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-1.5 text-white hover:text-brand-200 transition-colors"

@@ -92,10 +92,10 @@ export default function Navbar({ topOffset = 0 }) {
 
         {/* Desktop right */}
         <div className="hidden lg:flex items-center gap-3">
-          <a href="tel:04XXXXXXXX" className="flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">
-            <Phone className="w-3.5 h-3.5" /> 04XX XXX XXX
+          <a href="tel:+61415410507" className="flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">
+            <Phone className="w-3.5 h-3.5" /> 0415 410 507
           </a>
-          <a href="https://wa.me/614XXXXXXXXX" target="_blank" rel="noopener noreferrer"
+          <a href="https://wa.me/61415410507" target="_blank" rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-sm font-medium text-emerald-600 hover:text-emerald-700 transition-colors">
             <WhatsAppIcon /> WhatsApp
           </a>
@@ -121,10 +121,10 @@ export default function Navbar({ topOffset = 0 }) {
                 </Link>
               ))}
             <div className="pt-4 flex flex-col gap-3">
-              <a href="tel:04XXXXXXXX" className="flex items-center justify-center gap-2 py-3 border-2 border-slate-200 text-slate-700 font-semibold text-sm rounded-xl">
-                <Phone className="w-4 h-4" /> Call 04XX XXX XXX
+              <a href="tel:+61415410507" className="flex items-center justify-center gap-2 py-3 border-2 border-slate-200 text-slate-700 font-semibold text-sm rounded-xl">
+                <Phone className="w-4 h-4" /> Call 0415 410 507
               </a>
-              <a href="https://wa.me/614XXXXXXXXX" target="_blank" rel="noopener noreferrer"
+              <a href="https://wa.me/61415410507" target="_blank" rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 py-3 bg-emerald-500 text-white font-bold text-sm rounded-xl">
                 <WhatsAppIcon /> WhatsApp Us
               </a>
