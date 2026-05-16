@@ -52,12 +52,11 @@ When you confirm you've read this, explicitly list all 9 rules back to me so I k
 
 ## My Business Details
 - **ABN:** 20 455 980 845 ✅ confirmed active
-- **Business name:** "Clenza Cleaning" — registration IN PROGRESS at https://register.business.gov.au
-  - Reference number: **2605-OY-4997**
-  - Signed in as: tanvirpjwtp@gmail.com
-  - Step reached: Step 1 "Getting started" — continue from https://register.business.gov.au/registration/gettingstarted?appid=3884997
-  - Note: "Clenza" name blocked — CLENZA PTY LTD (ACN 697 393 098) already exists as a company
-  - "Clenza Cleaning" confirmed available (only similar name is CLEANAZ CLEANING — different enough)
+- **Business name:** "Clenza Cleaning" — **REGISTERED ✅** on 16 May 2026
+  - Reference number: 2605-OY-4997
+  - Receipt number: 900000946901277200
+  - Registered via: https://register.business.gov.au (account: tanvirpjwtp@gmail.com)
+  - Note: "Clenza" alone was blocked — CLENZA PTY LTD (ACN 697 393 098) already exists as a company
 - **Domain:** clenzaclean.com.au ✅ PURCHASED — VentraIP, Invoice #20443392
 - **Phone:** 0415 410 507 ✅ updated in code
 - **WhatsApp:** https://wa.me/61415410507
@@ -95,7 +94,7 @@ All updated to real number — if phone changes again, update these files:
 - ✅ Business name registration started at register.business.gov.au (ref: 2605-OY-4997, step 1)
 
 ## Still To Do
-- [ ] Complete "Clenza Cleaning" business name registration — resume at https://register.business.gov.au/registration/gettingstarted?appid=3884997 (ref: 2605-OY-4997) ← NEXT UP
+- [x] "Clenza Cleaning" business name registered ✅ (16 May 2026, receipt: 900000946901277200)
 - [ ] Add clenzaclean.com.au as new property in Google Search Console: https://search.google.com/search-console
 - [ ] Set up Google Business Profile: https://business.google.com
 - [ ] Set up Google Ads account: https://ads.google.com
