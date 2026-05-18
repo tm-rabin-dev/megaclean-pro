@@ -2,7 +2,8 @@ import { useState, useRef, useEffect } from 'react'
 import Anthropic from '@anthropic-ai/sdk'
 import { X, Send, Phone } from 'lucide-react'
 import SYSTEM_PROMPT from '../chatbot/systemPrompt'
-import { MascotFull, MascotHead } from './MascotSVG'
+
+const MASCOT_IMG = '/images/mascot-robot.png'
 
 const client = new Anthropic({
   apiKey: import.meta.env.VITE_ANTHROPIC_API_KEY || '',
@@ -21,8 +22,8 @@ const QUICK_QUESTIONS = [
 function TypingIndicator() {
   return (
     <div className="flex items-end gap-2 mb-4">
-      <div className="w-8 h-8 rounded-full overflow-hidden bg-[#176b61] flex items-center justify-center flex-shrink-0">
-        <MascotHead size={32} />
+      <div className="w-8 h-8 rounded-full overflow-hidden bg-[#0f5248] flex-shrink-0">
+        <img src={MASCOT_IMG} alt="" className="w-full h-full object-cover object-center" />
       </div>
       <div className="bg-slate-100 rounded-2xl rounded-bl-sm px-4 py-3">
         <div className="flex gap-1 items-center h-4">
@@ -44,8 +45,8 @@ function Message({ role, content }) {
   return (
     <div className={`flex items-end gap-2 mb-4 ${isUser ? 'flex-row-reverse' : ''}`}>
       {!isUser && (
-        <div className="w-8 h-8 rounded-full overflow-hidden bg-[#176b61] flex-shrink-0 flex items-center justify-center">
-          <MascotHead size={32} />
+        <div className="w-8 h-8 rounded-full overflow-hidden bg-[#0f5248] flex-shrink-0">
+          <img src={MASCOT_IMG} alt="" className="w-full h-full object-cover object-center" />
         </div>
       )}
       <div
@@ -172,11 +173,8 @@ export default function ChatWidget() {
           >
             <div className="flex items-center gap-3">
               {/* Cleany head in header */}
-              <div
-                className="w-11 h-11 rounded-full flex items-center justify-center flex-shrink-0 overflow-hidden border-2 border-white/30"
-                style={{ backgroundColor: '#0f5248' }}
-              >
-                <MascotHead size={44} />
+              <div className="w-11 h-11 rounded-full overflow-hidden flex-shrink-0 border-2 border-white/30 bg-[#0f5248]">
+                <img src={MASCOT_IMG} alt="Cleany" className="w-full h-full object-cover object-center" />
               </div>
               <div>
                 <div className="text-white font-extrabold text-sm">
@@ -232,11 +230,11 @@ export default function ChatWidget() {
           <div className="bg-slate-50 border-t border-slate-100 px-4 py-2.5 flex items-center justify-between flex-shrink-0">
             <span className="text-xs text-slate-500">Prefer to talk?</span>
             <a
-              href="tel:[PHONE]"
+              href="tel:0415410507"
               className="flex items-center gap-1.5 text-xs font-bold"
               style={{ color: '#176b61' }}
             >
-              <Phone className="w-3.5 h-3.5" /> Call [PHONE]
+              <Phone className="w-3.5 h-3.5" /> Call 0415 410 507
             </a>
           </div>
 
@@ -268,20 +266,26 @@ export default function ChatWidget() {
       {!open && (
         <button
           onClick={() => setOpen(true)}
-          className="fixed z-50 chat-launcher-pulse hover:scale-110 active:scale-95 transition-transform duration-200"
+          className="fixed z-50 mascot-launcher mascot-float"
           style={{ bottom: '20px', right: '20px' }}
           aria-label="Chat with Cleany"
         >
-          <div
-            className="relative"
-            style={{ filter: 'drop-shadow(0 8px 24px rgba(0,0,0,0.28))' }}
-          >
-            <MascotFull width={82} />
-            {/* Online green dot */}
-            <span
-              className="absolute top-6 right-0 w-5 h-5 bg-emerald-500 rounded-full border-2 border-white"
-              style={{ top: '20px', right: '2px' }}
+          <div className="relative">
+            <img
+              src={MASCOT_IMG}
+              alt="Chat with Cleany"
+              className="select-none"
+              style={{
+                width: 'clamp(60px, 10vw, 82px)',
+                height: 'clamp(60px, 10vw, 82px)',
+                objectFit: 'contain',
+                display: 'block',
+              }}
+              draggable={false}
             />
+            {/* Online dot */}
+            <span className="absolute w-4 h-4 bg-emerald-400 rounded-full border-2 border-white"
+              style={{ bottom: '6px', right: '4px' }} />
           </div>
         </button>
       )}
