@@ -276,8 +276,8 @@ export default function ChatWidget() {
               alt="Ask Clenzo"
               className="select-none"
               style={{
-                width: 'clamp(80px, 12vw, 110px)',
-                height: 'clamp(80px, 12vw, 110px)',
+                width: 'clamp(133px, 20vw, 183px)',
+                height: 'clamp(133px, 20vw, 183px)',
                 objectFit: 'contain',
                 display: 'block',
               }}
