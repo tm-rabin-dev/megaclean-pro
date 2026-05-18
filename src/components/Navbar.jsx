@@ -56,7 +56,7 @@ export default function Navbar({ topOffset = 0 }) {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between gap-6">
         {/* Logo */}
         <Link to="/" className="flex items-center flex-shrink-0">
-          <img src="/images/clenza-logo.png" alt="Clenza" className="h-11 w-auto" />
+          <img src="/images/clenza-logo.png" alt="Clenza" style={{ height: '88px', width: 'auto' }} />
         </Link>
 
         {/* Desktop nav */}
