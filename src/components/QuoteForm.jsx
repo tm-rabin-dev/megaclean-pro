@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { CheckCircle, ArrowRight, ArrowLeft, Loader } from 'lucide-react'
 
-const initForm = { serviceType: '', propertyType: '', bedrooms: '', bathrooms: '', date: '', name: '', phone: '', email: '' }
+const initForm = { serviceType: '', propertyType: '', suburb: '', bedrooms: '', bathrooms: '', date: '', name: '', phone: '', email: '' }
 
 const selectCls = 'w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all cursor-pointer'
 const inputCls  = 'w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all placeholder-slate-400'
@@ -45,14 +45,29 @@ export default function QuoteForm({ standalone = false }) {
   const back = () => setStep(s => Math.max(s - 1, 1))
 
   const canNext1 = form.serviceType && form.propertyType
-  const canNext2 = form.bedrooms && form.bathrooms && form.date
+  const canNext2 = form.suburb && form.bedrooms && form.bathrooms && form.date
   const canSubmit = form.name && form.phone && form.email
 
-  const submit = (e) => {
+  const submit = async (e) => {
     e.preventDefault()
     if (!canSubmit) return
     setLoading(true)
-    setTimeout(() => { setLoading(false); setSubmitted(true) }, 1200)
+    try {
+      const res = await fetch('https://formspree.io/f/REPLACE_WITH_FORM_ID', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(form),
+      })
+      if (res.ok) {
+        setSubmitted(true)
+      } else {
+        alert('Something went wrong. Please call us on 0415 410 507.')
+      }
+    } catch {
+      alert('Something went wrong. Please call us on 0415 410 507.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -93,14 +108,21 @@ export default function QuoteForm({ standalone = false }) {
                     <Lbl>Service Type *</Lbl>
                     <select value={form.serviceType} onChange={set('serviceType')} required className={selectCls}>
                       <option value="">Select a service</option>
+                      <option>Carpet Cleaning</option>
+                      <option>Couch / Upholstery Cleaning</option>
+                      <option>Leather Couch Cleaning</option>
+                      <option>Mattress Cleaning</option>
+                      <option>Rug Cleaning</option>
+                      <option>Curtain Cleaning</option>
+                      <option>Bedframe Cleaning</option>
+                      <option>Window Cleaning</option>
                       <option>End-of-Lease / Bond Clean</option>
+                      <option>Carpet Repair</option>
+                      <option>Carpet Restretching</option>
+                      <option>Flood & Water Damage</option>
                       <option>Regular House Clean</option>
                       <option>Deep Clean</option>
                       <option>Office Clean</option>
-                      <option>Airbnb / Short-Stay Clean</option>
-                      <option>Move-In / Move-Out Clean</option>
-                      <option>Carpet Cleaning</option>
-                      <option>Window Cleaning</option>
                     </select>
                   </div>
                   <div>
@@ -125,6 +147,10 @@ export default function QuoteForm({ standalone = false }) {
               {step === 2 && (
                 <div className="space-y-5">
                   <h4 className="font-extrabold text-slate-900 text-base mb-5">Tell us about your property</h4>
+                  <div>
+                    <Lbl>Suburb / Postcode *</Lbl>
+                    <input type="text" value={form.suburb} onChange={set('suburb')} required placeholder="e.g. Parramatta 2150" className={inputCls} />
+                  </div>
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div>
                       <Lbl>Bedrooms *</Lbl>

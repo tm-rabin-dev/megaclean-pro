@@ -43,10 +43,10 @@ export default function QuotePage() {
               <div className="text-sm font-bold text-slate-900 mb-1">Prefer to talk?</div>
               <p className="text-xs text-slate-500 mb-3">Our team is available Mon–Sat 7am–7pm</p>
               <a
-                href="tel:04XXXXXXXX"
+                href="tel:0415410507"
                 className="block w-full text-center py-3 bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm rounded-xl transition-colors"
               >
-                Call 04XX XXX XXX
+                Call 0415 410 507
               </a>
             </div>
           </div>

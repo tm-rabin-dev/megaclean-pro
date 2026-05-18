@@ -28,7 +28,7 @@ export default function CTABanner({
             Get Instant Quote <ArrowRight className="w-5 h-5" />
           </Link>
           <a
-            href="https://wa.me/614XXXXXXXXX"
+            href="https://wa.me/61415410507"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-white font-bold text-base rounded-xl transition-colors"
@@ -36,10 +36,10 @@ export default function CTABanner({
             <WhatsAppIcon /> WhatsApp Us
           </a>
           <a
-            href="tel:04XXXXXXXX"
+            href="tel:0415410507"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border-2 border-white/40 hover:border-white text-white font-semibold text-base rounded-xl transition-colors"
           >
-            <Phone className="w-5 h-5" /> Call 04XX XXX XXX
+            <Phone className="w-5 h-5" /> Call 0415 410 507
           </a>
         </div>
       </div>

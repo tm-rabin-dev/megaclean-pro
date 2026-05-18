@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Phone, Mail, MapPin, Clock, CheckCircle, Loader, ArrowRight } from 'lucide-react'
 
 const info = [
-  { icon: Phone, label: 'Phone', value: '04XX XXX XXX', sub: 'Mon–Sat 7am–7pm, Sun 8am–5pm', href: 'tel:04XXXXXXXX', color: 'bg-brand-50 text-brand-600' },
+  { icon: Phone, label: 'Phone', value: '0415 410 507', sub: 'Mon–Sat 7am–7pm, Sun 8am–5pm', href: 'tel:0415410507', color: 'bg-brand-50 text-brand-600' },
   { icon: Mail, label: 'Email', value: 'hello@clenza.com.au', sub: 'We reply within 2 hours', href: 'mailto:hello@clenza.com.au', color: 'bg-cyan-50 text-cyan-600' },
   { icon: MapPin, label: 'Service Area', value: 'All Sydney Suburbs', sub: 'CBD · East · North Shore · West', href: null, color: 'bg-emerald-50 text-emerald-600' },
   { icon: Clock, label: 'Hours', value: 'Mon–Sat 7am–7pm', sub: 'Sunday 8am–5pm', href: null, color: 'bg-violet-50 text-violet-600' },
@@ -18,10 +18,25 @@ export default function Contact() {
 
   const set = (f) => (e) => setForm((p) => ({ ...p, [f]: e.target.value }))
 
-  const submit = (e) => {
+  const submit = async (e) => {
     e.preventDefault()
     setLoading(true)
-    setTimeout(() => { setLoading(false); setSubmitted(true) }, 1000)
+    try {
+      const res = await fetch('https://formspree.io/f/REPLACE_WITH_FORM_ID', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(form),
+      })
+      if (res.ok) {
+        setSubmitted(true)
+      } else {
+        alert('Something went wrong. Please call us on 0415 410 507.')
+      }
+    } catch {
+      alert('Something went wrong. Please call us on 0415 410 507.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -57,12 +72,18 @@ export default function Contact() {
               ))}
             </div>
 
-            {/* Map placeholder */}
-            <div className="rounded-2xl bg-slate-50 border border-slate-200 h-44 flex flex-col items-center justify-center text-center p-6">
-              <MapPin className="w-8 h-8 text-brand-400 mb-2" />
-              <p className="font-bold text-slate-700 text-sm mb-1">Sydney, NSW</p>
-              <p className="text-xs text-slate-500">Serving all suburbs — CBD, Eastern, North Shore, Inner West, Parramatta &amp; Western Sydney.</p>
-              <p className="text-xs text-brand-500 mt-2 font-medium">↑ Replace with Google Maps embed</p>
+            {/* Google Maps embed */}
+            <div className="rounded-2xl overflow-hidden border border-slate-200 h-44">
+              <iframe
+                title="Clenza Cleaning service area"
+                src="https://maps.google.com/maps?q=Wentworthville,+NSW+2145,+Australia&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
           </div>
 
@@ -106,7 +127,7 @@ export default function Contact() {
                 </button>
                 <p className="text-center text-xs text-slate-400">
                   Or call us on{' '}
-                  <a href="tel:04XXXXXXXX" className="text-brand-600 font-semibold">04XX XXX XXX</a>
+                  <a href="tel:0415410507" className="text-brand-600 font-semibold">0415 410 507</a>
                 </p>
               </form>
             )}
