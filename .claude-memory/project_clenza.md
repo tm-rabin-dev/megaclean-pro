@@ -58,7 +58,13 @@ type: project
 7. Always ask before anything destructive
 8. Always test mobile AND desktop before marking done
 
-## Still To Do (as of 17 May 2026)
+## Key Files
+- Logo: /public/images/clenza-logo.png (draft — final transparent PNG pending)
+- Mascot robot: /public/images/mascot-robot.png (chatbot launcher)
+- Chatbot: src/components/ChatWidget.jsx — named "Clenzo", label "ASK CLENZO"
+- Forms: Formspree ID xpqnzllv → tanvirpjwtp@gmail.com
+
+## Still To Do (as of 18 May 2026)
 - [ ] Click Verify in Google Search Console for clenzaclean.com.au
 - [ ] Submit sitemap.xml in new Search Console property
 - [ ] Check GBP public visibility in incognito (should go live within 3–7 days of 16 May)

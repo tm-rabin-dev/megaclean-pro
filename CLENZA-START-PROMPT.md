@@ -49,7 +49,7 @@ When you confirm you've read this, explicitly list all 9 rules back to me so I k
 - All URLs in code (index.html, sitemap.xml, robots.txt, schema) updated to clenzaclean.com.au ✅
 - GitHub connected and auto-deploying to Vercel ✅
 - Stable backup tag: `v1-stable` (restore: `git checkout v1-stable`)
-- Phone number updated to 0415 410 507 in all components ✅
+- Phone number updated to 0415 410 507 in ALL components ✅ (including CTABanner, Contact, QuotePage)
 - ABN updated to 20 455 980 845 in Footer.jsx and index.html schema ✅
 - Google Business Profile created and verified ✅ (https://business.google.com)
 - GBP has 10 photos, 15 services with descriptions, business description, service areas, hours ✅
@@ -60,6 +60,16 @@ When you confirm you've read this, explicitly list all 9 rules back to me so I k
 - GBP panel not yet showing publicly — expected within 1–2 more days
 - Business registration certificate confirmed on ASIC ✅
 - Real address confirmed: 7 Bennett St, Wentworthville NSW 2145 (NOT yet updated in code)
+- Contact + Quote forms wired to Formspree (ID: xpqnzllv) → tanvirpjwtp@gmail.com ✅
+- Pricing section rewritten with real service pricing (carpet/couch/mattress/EOL etc.) ✅
+- Quote form updated with all 15 services + suburb/postcode field ✅
+- Google Maps embed added to Contact page (Wentworthville) ✅
+- Real Clenza logo added: /public/images/clenza-logo.png ✅ (draft — final version pending)
+- Logo live in Navbar, Footer, 404 page and favicon ✅
+- Chatbot mascot robot added: /public/images/mascot-robot.png ✅
+- Chatbot renamed from "Cleany" to "Clenzo", launcher shows "ASK CLENZO" label ✅
+- Memory files backed up to GitHub at .claude-memory/ ✅
+- 3-hour auto-update cron running (routine ID: trig_01Xtf948rjWRWwpTVpzYD2Mn) ✅
 
 ## DNS (VentraIP)
 - A record: clenzaclean.com.au → 216.198.79.1
@@ -142,9 +152,12 @@ All updated to real number — if phone changes again, update these files:
 - [ ] Get real customer reviews on Google
 - [ ] Add suburb SEO pages (Parramatta, Bondi, Newtown etc.)
 - [ ] Replace AI-generated About page photos (team.png, van.png) with real photos
+- [ ] Replace draft logo with final high-res transparent PNG when ready
 - [ ] Set up Google Ads properly when ready (A$600 credit available — https://ads.google.com)
-- [ ] Consider updating www CNAME in VentraIP to 03a88abd3c34c104.vercel-dns-017.com (optional)
 - [ ] List on Airtasker, hipages, ServiceSeeking for immediate leads
+- [ ] Add Privacy Policy and Terms of Service pages
+- [ ] Add sticky mobile CTA bar (call + WhatsApp buttons visible on scroll)
+- [ ] Consider updating www CNAME in VentraIP to 03a88abd3c34c104.vercel-dns-017.com (optional)
 
 ## Rules — MUST FOLLOW, NO EXCEPTIONS
 1. Always push to GitHub — NEVER edit Vercel directly
