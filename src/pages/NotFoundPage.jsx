@@ -1,14 +1,13 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Home, Sparkles } from 'lucide-react'
-import { MascotFull } from '../components/MascotSVG'
 
 export default function NotFoundPage() {
   return (
     <div className="min-h-screen flex items-center justify-center px-6 py-32 bg-white">
       <div className="text-center max-w-lg">
-        {/* Cleany mascot */}
+        {/* Clenzo mascot */}
         <div className="flex justify-center mb-6">
-          <MascotFull width={110} />
+          <img src="/images/mascot-robot.png" alt="Clenzo" className="w-28 h-28 object-contain" />
         </div>
 
         {/* 404 */}
@@ -18,7 +17,7 @@ export default function NotFoundPage() {
           This page ran off with a mop!
         </h1>
         <p className="text-slate-500 text-base mb-8">
-          Looks like Cleany cleaned this page right out of existence. Let's get you back to somewhere useful.
+          Looks like Clenzo cleaned this page right out of existence. Let's get you back to somewhere useful.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center">

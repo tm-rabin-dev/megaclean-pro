@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Sparkles, Phone, Mail, MapPin, Facebook, Instagram } from 'lucide-react'
+import { Phone, Mail, MapPin, Facebook, Instagram } from 'lucide-react'
 
 const services = [
   'End-of-Lease Cleaning',
@@ -30,11 +30,10 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-2 md:grid-cols-4 gap-10">
         {/* Brand */}
         <div className="col-span-2 md:col-span-1">
-          <Link to="/" className="flex items-center gap-2 mb-5">
-            <div className="w-9 h-9 bg-brand-600 rounded-xl flex items-center justify-center">
-              <Sparkles className="w-4 h-4 text-white" />
+          <Link to="/" className="inline-flex mb-5">
+            <div className="bg-white rounded-xl p-1.5 inline-flex">
+              <img src="/images/clenza-logo.png" alt="Clenza" className="h-12 w-auto" />
             </div>
-            <span className="font-extrabold text-lg">Clenz<span className="text-brand-400">a</span></span>
           </Link>
           <p className="text-slate-400 text-sm leading-relaxed mb-5">
             Sydney's trusted professional cleaning service. Verified cleaners, transparent pricing, and a 100% satisfaction guarantee.

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { Menu, X, Sparkles, Phone, ChevronDown } from 'lucide-react'
+import { Menu, X, Phone, ChevronDown } from 'lucide-react'
 
 function WhatsAppIcon() {
   return (
@@ -55,13 +55,8 @@ export default function Navbar({ topOffset = 0 }) {
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between gap-6">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 flex-shrink-0">
-          <div className="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center">
-            <Sparkles className="w-4 h-4 text-white" />
-          </div>
-          <span className="font-extrabold text-lg text-slate-900">
-            Clenz<span className="text-brand-600">a</span>
-          </span>
+        <Link to="/" className="flex items-center flex-shrink-0">
+          <img src="/images/clenza-logo.png" alt="Clenza" className="h-11 w-auto" />
         </Link>
 
         {/* Desktop nav */}
