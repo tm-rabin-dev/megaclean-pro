@@ -53,7 +53,7 @@ export default function QuoteForm({ standalone = false }) {
     if (!canSubmit) return
     setLoading(true)
     try {
-      const res = await fetch('https://formspree.io/f/REPLACE_WITH_FORM_ID', {
+      const res = await fetch('https://formspree.io/f/xpqnzllv', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(form),
