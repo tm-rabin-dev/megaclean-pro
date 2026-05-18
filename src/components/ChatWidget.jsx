@@ -10,7 +10,7 @@ const client = new Anthropic({
   dangerouslyAllowBrowser: true,
 })
 
-const GREETING = "G'day! I'm Cleany 🧹\n\nYour Clenza cleaning assistant! Ask me about pricing, services, same-day bookings — I'm here to help."
+const GREETING = "G'day! I'm Clenzo 🧹\n\nYour Clenza cleaning assistant! Ask me about pricing, services, same-day bookings — I'm here to help."
 
 const QUICK_QUESTIONS = [
   'How much for carpet cleaning?',
@@ -172,13 +172,13 @@ export default function ChatWidget() {
             style={{ backgroundColor: '#176b61' }}
           >
             <div className="flex items-center gap-3">
-              {/* Cleany head in header */}
+              {/* Clenzo head in header */}
               <div className="w-11 h-11 rounded-full overflow-hidden flex-shrink-0 border-2 border-white/30 bg-[#0f5248]">
-                <img src={MASCOT_IMG} alt="Cleany" className="w-full h-full object-cover object-center" />
+                <img src={MASCOT_IMG} alt="Clenzo" className="w-full h-full object-cover object-center" />
               </div>
               <div>
                 <div className="text-white font-extrabold text-sm">
-                  Cleany — Clenza Assistant
+                  Clenzo — Clenza Assistant
                 </div>
                 <div className="flex items-center gap-1.5 mt-0.5">
                   <span className="w-2 h-2 bg-emerald-400 rounded-full" />
@@ -246,7 +246,7 @@ export default function ChatWidget() {
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKey}
               rows={1}
-              placeholder="Ask Cleany anything..."
+              placeholder="Ask Clenzo anything..."
               className="flex-1 resize-none text-sm text-slate-800 placeholder-slate-400 bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:border-transparent max-h-28 overflow-y-auto"
               style={{ '--tw-ring-color': '#176b61' }}
             />
@@ -262,27 +262,30 @@ export default function ChatWidget() {
         </div>
       )}
 
-      {/* ── Cleany launcher button ── */}
+      {/* ── Clenzo launcher button ── */}
       {!open && (
         <button
           onClick={() => setOpen(true)}
           className="fixed z-50 mascot-launcher mascot-float"
           style={{ bottom: '20px', right: '20px' }}
-          aria-label="Chat with Cleany"
+          aria-label="Chat with Clenzo"
         >
           <div className="relative">
             <img
               src={MASCOT_IMG}
-              alt="Chat with Cleany"
+              alt="Chat with Clenzo"
               className="select-none"
               style={{
-                width: 'clamp(60px, 10vw, 82px)',
-                height: 'clamp(60px, 10vw, 82px)',
+                width: 'clamp(70px, 11vw, 95px)',
+                height: 'clamp(70px, 11vw, 95px)',
                 objectFit: 'contain',
                 display: 'block',
               }}
               draggable={false}
             />
+            <span className="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#176b61] text-white text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap shadow-md">
+              Clenzo ✨
+            </span>
             {/* Online dot */}
             <span className="absolute w-4 h-4 bg-emerald-400 rounded-full border-2 border-white"
               style={{ bottom: '6px', right: '4px' }} />
