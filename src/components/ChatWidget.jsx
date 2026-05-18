@@ -273,18 +273,18 @@ export default function ChatWidget() {
           <div className="relative">
             <img
               src={MASCOT_IMG}
-              alt="Chat with Clenzo"
+              alt="Ask Clenzo"
               className="select-none"
               style={{
-                width: 'clamp(70px, 11vw, 95px)',
-                height: 'clamp(70px, 11vw, 95px)',
+                width: 'clamp(80px, 12vw, 110px)',
+                height: 'clamp(80px, 12vw, 110px)',
                 objectFit: 'contain',
                 display: 'block',
               }}
               draggable={false}
             />
-            <span className="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#176b61] text-white text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap shadow-md">
-              Clenzo ✨
+            <span className="absolute -top-7 left-1/2 -translate-x-1/2 bg-[#176b61] text-white text-xs font-bold px-3 py-1.5 rounded-full whitespace-nowrap shadow-md">
+              ASK CLENZO ✨
             </span>
             {/* Online dot */}
             <span className="absolute w-4 h-4 bg-emerald-400 rounded-full border-2 border-white"
