@@ -53,7 +53,7 @@ export default function Navbar({ topOffset = 0 }) {
       className={`fixed left-0 right-0 z-50 bg-white transition-shadow duration-300 ${scrolled ? 'shadow-md' : 'border-b border-slate-100'}`}
       style={{ top: `${topOffset}px` }}
     >
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between gap-6">
+      <div className="max-w-6xl mx-auto px-6 h-24 flex items-center justify-between gap-6">
         {/* Logo */}
         <Link to="/" className="flex items-center flex-shrink-0">
           <img src="/images/clenza-logo.png" alt="Clenza" style={{ height: '88px', width: 'auto' }} />
