@@ -65,7 +65,7 @@ When you confirm you've read this, explicitly list all 9 rules back to me so I k
 - Quote form updated with all 15 services + suburb/postcode field ✅
 - Google Maps embed added to Contact page (Wentworthville) ✅
 - Real Clenza logo added: /public/images/clenza-logo.png ✅ (draft — final version pending)
-- Logo live in Navbar, Footer, 404 page and favicon ✅
+- Logo live in Navbar (64px, h-20 navbar), Footer, 404 page and favicon ✅
 - Chatbot mascot robot added: /public/images/mascot-robot.png ✅
 - Chatbot renamed from "Cleany" to "Clenzo", launcher shows "ASK CLENZO" label ✅
 - Memory files backed up to GitHub at .claude-memory/ ✅
