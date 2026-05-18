@@ -5,7 +5,13 @@ Copy everything below the line and paste it at the start of a new Claude chat.
 
 You are taking over as my Claude Code assistant. Please read everything below and take full control immediately.
 
-## ⚠️ CRITICAL RULES — READ FIRST, BEFORE ANYTHING ELSE ⚠️
+## ⚠️ FIRST ACTION — READ MEMORY ⚠️
+Before anything else, read ALL memory files in:
+`C:\Users\tanvi\.claude\projects\c--Users-tanvi-OneDrive-Desktop-Claude-AI\memory\`
+
+Start with MEMORY.md (index), then read each file listed. After reading, update the "Current State" and "Still To Do" sections of THIS file to reflect the latest known state.
+
+## ⚠️ CRITICAL RULES — READ SECOND, BEFORE ANYTHING ELSE ⚠️
 These rules MUST be followed at all times. No exceptions.
 
 1. NEVER edit Vercel directly — always push to GitHub only
@@ -32,7 +38,7 @@ When you confirm you've read this, explicitly list all 9 rules back to me so I k
 ## Read this file first for full project context:
 `c:\Users\tanvi\OneDrive\Desktop\Claude AI\client-sites\megaclean-pro\CLAUDE.md`
 
-## Current State (as of 16 May 2026)
+## Current State (as of 18 May 2026)
 - Site is live and healthy at clenzaclean.com.au ✅
 - SSL certificate active — padlock showing on both clenzaclean.com.au and www.clenzaclean.com.au ✅
 - Both clenzaclean.com.au and www.clenzaclean.com.au show Valid Configuration in Vercel ✅
@@ -45,6 +51,15 @@ When you confirm you've read this, explicitly list all 9 rules back to me so I k
 - Stable backup tag: `v1-stable` (restore: `git checkout v1-stable`)
 - Phone number updated to 0415 410 507 in all components ✅
 - ABN updated to 20 455 980 845 in Footer.jsx and index.html schema ✅
+- Google Business Profile created and verified ✅ (https://business.google.com)
+- GBP has 10 photos, 15 services with descriptions, business description, service areas, hours ✅
+- GBP service areas: Bondi, Inner West, Sydney CBD, Parramatta ✅
+- GBP hours: Mon–Sun 7am–7pm ✅
+- Google Search Console verified for clenzaclean.com.au ✅ — sitemap submitted
+- Website NOW INDEXED by Google ✅ — showing in incognito search as of 18 May 2026
+- GBP panel not yet showing publicly — expected within 1–2 more days
+- Business registration certificate confirmed on ASIC ✅
+- Real address confirmed: 7 Bennett St, Wentworthville NSW 2145 (NOT yet updated in code)
 
 ## DNS (VentraIP)
 - A record: clenzaclean.com.au → 216.198.79.1
@@ -62,6 +77,17 @@ When you confirm you've read this, explicitly list all 9 rules back to me so I k
 - **WhatsApp:** https://wa.me/61415410507
 - **Email:** hello@clenza.com.au
 - **Address:** Sydney, NSW ← still a general placeholder in code
+
+## Google Search Console
+- Old property: https://megaclean-pro.vercel.app (still exists, ignore)
+- New property: https://clenzaclean.com.au ✅ added 17 May 2026
+- Verification meta tag: both old and new tags in index.html (DO NOT REMOVE EITHER)
+- Sitemap: still needs to be submitted in the new property at https://search.google.com/search-console
+
+## Google Business Profile
+- URL: https://business.google.com
+- Status: Verified ✅ — awaiting public propagation (3–7 days from 16 May 2026)
+- Competitor note: klenzaclean.com.au (Klenza Clean, Melbourne) — similar domain but different city, no conflict
 
 ## Phone / WhatsApp locations in code
 All updated to real number — if phone changes again, update these files:
@@ -90,25 +116,39 @@ All updated to real number — if phone changes again, update these files:
 - ✅ couch-after-05-new.jpg committed to repo
 - ✅ Phone number 0415 410 507 added to all components
 - ✅ ABN 20 455 980 845 added to Footer and schema
-- ✅ Business name search done — "Clenza Cleaning" is available
-- ✅ Business name registration started at register.business.gov.au (ref: 2605-OY-4997, step 1)
+- ✅ Business name "Clenza Cleaning" registered (ref: 2605-OY-4997, receipt: 900000946901277200)
+
+## What Was Done — Session 17 May 2026
+- ✅ Google Business Profile created and verified at https://business.google.com
+- ✅ 10 real cleaning photos uploaded to GBP
+- ✅ 15 services added with descriptions in GBP
+- ✅ Business description, service areas (Bondi, Inner West, CBD, Parramatta), hours (Mon–Sun 7am–7pm) set
+- ✅ Online estimates set to Yes in GBP
+- ✅ Google Search Console property added for clenzaclean.com.au
+- ✅ New verification meta tag added to index.html and pushed to GitHub (commit: 9362469)
+- ✅ Memory and start prompt updated with full session context
+
+## What Was Done — Session 18 May 2026
+- ✅ Confirmed website is now indexed by Google (showing in incognito search)
+- ✅ Business registration certificate confirmed on ASIC (connectonline.asic.gov.au)
+- ✅ Real address confirmed: 7 Bennett St, Wentworthville NSW 2145
+- ✅ Memory and start prompt updated
 
 ## Still To Do
-- [x] "Clenza Cleaning" business name registered ✅ (16 May 2026, receipt: 900000946901277200)
-- [ ] Add clenzaclean.com.au as new property in Google Search Console: https://search.google.com/search-console
-- [ ] Set up Google Business Profile: https://business.google.com
-- [ ] Set up Google Ads account: https://ads.google.com
-- [ ] Update address in code (suburb still a placeholder in Hero, Footer, schema)
+- [ ] Update address in code — 7 Bennett St, Wentworthville NSW 2145 (Hero.jsx, Footer.jsx, index.html schema)
 - [ ] Fix Rug Cleaning emoji (currently 🏠 house — wrong)
 - [ ] Check Carpet Repair card image
+- [ ] Check GBP panel showing publicly in incognito (expected any day now)
 - [ ] Get real customer reviews on Google
 - [ ] Add suburb SEO pages (Parramatta, Bondi, Newtown etc.)
 - [ ] Replace AI-generated About page photos (team.png, van.png) with real photos
-- [ ] Consider updating www CNAME in VentraIP to 03a88abd3c34c104.vercel-dns-017.com (Vercel recommended, optional)
+- [ ] Set up Google Ads properly when ready (A$600 credit available — https://ads.google.com)
+- [ ] Consider updating www CNAME in VentraIP to 03a88abd3c34c104.vercel-dns-017.com (optional)
+- [ ] List on Airtasker, hipages, ServiceSeeking for immediate leads
 
 ## Rules — MUST FOLLOW, NO EXCEPTIONS
 1. Always push to GitHub — NEVER edit Vercel directly
-2. Do NOT remove the Google verification meta tag from index.html — site will lose Search Console verification
+2. Do NOT remove either Google verification meta tag from index.html — site will lose Search Console verification
 3. Do NOT delete or rename files from /public/images/ or /public/videos/
 4. Do NOT change service IDs in Services.jsx — they are used for hash navigation (e.g. /services#carpet)
 5. Do NOT add reveal animations to Contact.jsx or VideoSection.jsx — these were intentionally removed (caused blank page bug)
