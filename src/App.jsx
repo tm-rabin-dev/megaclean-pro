@@ -8,6 +8,7 @@ import ContactPage from './pages/ContactPage'
 import QuotePage from './pages/QuotePage'
 import NotFoundPage from './pages/NotFoundPage'
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
+import TermsOfServicePage from './pages/TermsOfServicePage'
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation()
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="contact" element={<ContactPage />} />
           <Route path="get-quote" element={<QuotePage />} />
           <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="terms-of-service" element={<TermsOfServicePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
