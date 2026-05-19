@@ -133,7 +133,7 @@ export const allServices = [
   },
   {
     id: 'rug',
-    emoji: '🏠',
+    emoji: '🧺',
     bgColor: 'bg-[#f7f7f4]',
     borderColor: 'border-[#e7e6df]',
     title: 'Rug Cleaning',

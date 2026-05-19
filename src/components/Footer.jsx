@@ -46,7 +46,7 @@ export default function Footer() {
               <Mail className="w-4 h-4 text-brand-400" /> hello@clenza.com.au
             </a>
             <div className="flex items-center gap-2 text-slate-400">
-              <MapPin className="w-4 h-4 text-brand-400 flex-shrink-0" /> Sydney, NSW, Australia
+              <MapPin className="w-4 h-4 text-brand-400 flex-shrink-0" /> 7 Bennett St, Wentworthville NSW 2145
             </div>
           </div>
           <div className="flex gap-3 mt-5">
