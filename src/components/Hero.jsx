@@ -100,9 +100,7 @@ export default function Hero() {
                 afterAlt="Leather couch after cleaning"
                 className="h-full w-full"
               />
-              <div className="absolute bottom-3 left-3 z-10 bg-white/90 text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm pointer-events-none">
-                📍 7 Bennett St, Wentworthville NSW 2145
-              </div>
+
             </div>
 
             {/* Floating stats */}
