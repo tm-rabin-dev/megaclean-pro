@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { Phone, ArrowRight } from 'lucide-react'
+import { Phone, MessageCircle } from 'lucide-react'
 
 export default function StickyMobileCTA() {
   const [visible, setVisible] = useState(false)
@@ -13,17 +12,19 @@ export default function StickyMobileCTA() {
   return (
     <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 flex shadow-2xl">
       <a
-        href="tel:04XXXXXXXX"
+        href="tel:+61415410507"
         className="flex-1 flex items-center justify-center gap-2 py-4 bg-slate-800 text-white font-semibold text-sm"
       >
         <Phone className="w-4 h-4" /> Call Now
       </a>
-      <Link
-        to="/get-quote"
-        className="flex-1 flex items-center justify-center gap-2 py-4 bg-brand-600 text-white font-bold text-sm"
+      <a
+        href="https://wa.me/61415410507"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex-1 flex items-center justify-center gap-2 py-4 bg-[#25D366] text-white font-bold text-sm"
       >
-        Get Quote <ArrowRight className="w-4 h-4" />
-      </Link>
+        <MessageCircle className="w-4 h-4" /> WhatsApp
+      </a>
     </div>
   )
 }
