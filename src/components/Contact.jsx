@@ -76,7 +76,7 @@ export default function Contact() {
             <div className="rounded-2xl overflow-hidden border border-slate-200 h-44">
               <iframe
                 title="Clenza Cleaning service area"
-                src="https://maps.google.com/maps?q=Wentworthville,+NSW+2145,+Australia&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=9+Hilts+Road,+Strathfield,+NSW+2135,+Australia&t=&z=13&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

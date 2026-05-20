@@ -53,12 +53,12 @@ When you confirm you've read this, explicitly list all 9 rules back to me so I k
 - Phone number updated to 0415 410 507 in all main components ✅
 - WhatsApp links point to https://wa.me/61415410507 ✅
 - ABN updated to 20 455 980 845 in Footer, policies and schema ✅
-- Real address 7 Bennett St, Wentworthville NSW 2145 is now in Footer, schema, Privacy Policy and Terms ✅
+- Real address 9 Hilts Road, Strathfield NSW 2135 is now in Footer, schema, Privacy Policy and Terms ✅
 - Hero address overlay was removed ✅
 - Contact + Quote forms wired to Formspree (ID: xpqnzllv) → tanvirpjwtp@gmail.com ✅
 - Pricing section rewritten with real service pricing (carpet/couch/mattress/EOL etc.) ✅
 - Quote form updated with all 15 services + suburb/postcode field ✅
-- Google Maps embed added to Contact page (Wentworthville) ✅
+- Google Maps embed added to Contact page (Strathfield) ✅
 - Privacy Policy page added at /privacy-policy ✅
 - Terms of Service page added at /terms-of-service ✅
 - Sticky mobile CTA bar added with Call + WhatsApp buttons ✅
@@ -90,7 +90,7 @@ When you confirm you've read this, explicitly list all 9 rules back to me so I k
 - **Phone:** 0415 410 507 ✅ updated in code
 - **WhatsApp:** https://wa.me/61415410507
 - **Email:** hello@clenza.com.au
-- **Address:** 7 Bennett St, Wentworthville NSW 2145 ✅ updated in key code locations
+- **Address:** 9 Hilts Road, Strathfield NSW 2135 ✅ updated in key code locations
 
 ## Google Search Console
 - Old property: https://megaclean-pro.vercel.app (still exists, ignore)
@@ -146,6 +146,7 @@ All updated to real number — if phone changes again, update these files:
 - ✅ Confirmed website is now indexed by Google (showing in incognito search)
 - ✅ Business registration certificate confirmed on ASIC (connectonline.asic.gov.au)
 - ✅ Real address confirmed: 7 Bennett St, Wentworthville NSW 2145
+- ✅ Address later changed to 9 Hilts Road, Strathfield NSW 2135
 - ✅ Memory and start prompt updated
 
 ## What Was Done — Session 20 May 2026

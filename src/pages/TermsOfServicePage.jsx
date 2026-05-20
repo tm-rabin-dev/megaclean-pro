@@ -7,7 +7,7 @@ const sections = [
 
 Business name: Clenza Cleaning
 ABN: 20 455 980 845
-Address: 7 Bennett St, Wentworthville NSW 2145
+Address: 9 Hilts Road, Strathfield NSW 2135
 Email: hello@clenza.com.au
 Phone: 0415 410 507
 
@@ -117,7 +117,7 @@ You may not reproduce, distribute, or use any content from this website without 
 
 Email: hello@clenza.com.au
 Phone: 0415 410 507
-Address: 7 Bennett St, Wentworthville NSW 2145, Sydney NSW, Australia`,
+Address: 9 Hilts Road, Strathfield NSW 2135, Sydney NSW, Australia`,
   },
 ]
 
