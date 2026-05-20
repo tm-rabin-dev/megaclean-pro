@@ -38,36 +38,40 @@ When you confirm you've read this, explicitly list all 9 rules back to me so I k
 ## Read this file first for full project context:
 `c:\Users\tanvi\OneDrive\Desktop\Claude AI\client-sites\megaclean-pro\CLAUDE.md`
 
-## Current State (as of 18 May 2026)
-- Site is live and healthy at clenzaclean.com.au ✅
-- SSL certificate active — padlock showing on both clenzaclean.com.au and www.clenzaclean.com.au ✅
-- Both clenzaclean.com.au and www.clenzaclean.com.au show Valid Configuration in Vercel ✅
-- megaclean-pro.vercel.app still works (back door) ✅
-- 12 services with real photos, galleries and before/after sliders ✅
-- Interactive CompareSlider used in Hero, BeforeAfter section, and TransformationsGallery ✅
-- SEO configured (Google Search Console verified, schema markup, sitemap) ✅
-- All URLs in code (index.html, sitemap.xml, robots.txt, schema) updated to clenzaclean.com.au ✅
-- GitHub connected and auto-deploying to Vercel ✅
+## Current State (as of 20 May 2026)
+- Site is live at https://clenzaclean.com.au ✅
+- SSL certificate active on https://clenzaclean.com.au and https://www.clenzaclean.com.au ✅
+- Backdoor URL https://megaclean-pro.vercel.app still works ✅
+- GitHub connected and auto-deploying to Vercel from `master` ✅
 - Stable backup tag: `v1-stable` (restore: `git checkout v1-stable`)
-- Phone number updated to 0415 410 507 in ALL components ✅ (including CTABanner, Contact, QuotePage)
-- ABN updated to 20 455 980 845 in Footer.jsx and index.html schema ✅
-- Google Business Profile created and verified ✅ (https://business.google.com)
-- GBP has 10 photos, 15 services with descriptions, business description, service areas, hours ✅
-- GBP service areas: Bondi, Inner West, Sydney CBD, Parramatta ✅
-- GBP hours: Mon–Sun 7am–7pm ✅
-- Google Search Console verified for clenzaclean.com.au ✅ — sitemap submitted
-- Website NOW INDEXED by Google ✅ — showing in incognito search as of 18 May 2026
-- GBP panel not yet showing publicly — expected within 1–2 more days
-- Business registration certificate confirmed on ASIC ✅
-- Real address confirmed: 7 Bennett St, Wentworthville NSW 2145 (NOT yet updated in code)
+- 12 services in code with real photos, galleries and before/after sliders ✅
+- Interactive CompareSlider used in Hero, BeforeAfter section, and TransformationsGallery ✅
+- SEO configured: Google verification meta tags, schema markup, sitemap, robots.txt, canonical and OG tags ✅
+- All main URLs in code point to https://clenzaclean.com.au ✅
+- Google Search Console verified for https://clenzaclean.com.au ✅ — sitemap submitted
+- Website indexed by Google as of 18 May 2026 ✅
+- Phone number updated to 0415 410 507 in all main components ✅
+- WhatsApp links point to https://wa.me/61415410507 ✅
+- ABN updated to 20 455 980 845 in Footer, policies and schema ✅
+- Real address 7 Bennett St, Wentworthville NSW 2145 is now in Footer, schema, Privacy Policy and Terms ✅
+- Hero address overlay was removed ✅
 - Contact + Quote forms wired to Formspree (ID: xpqnzllv) → tanvirpjwtp@gmail.com ✅
 - Pricing section rewritten with real service pricing (carpet/couch/mattress/EOL etc.) ✅
 - Quote form updated with all 15 services + suburb/postcode field ✅
 - Google Maps embed added to Contact page (Wentworthville) ✅
+- Privacy Policy page added at /privacy-policy ✅
+- Terms of Service page added at /terms-of-service ✅
+- Sticky mobile CTA bar added with Call + WhatsApp buttons ✅
+- Rug Cleaning emoji fixed from house to basket ✅
 - Real Clenza logo added: /public/images/clenza-logo.png ✅ (draft — final version pending)
 - Logo live in Navbar (64px, h-20 navbar), Footer, 404 page and favicon ✅
 - Chatbot mascot robot added: /public/images/mascot-robot.png ✅
 - Chatbot renamed from "Cleany" to "Clenzo", launcher shows "ASK CLENZO" label ✅
+- Google Business Profile created and verified ✅ (https://business.google.com)
+- GBP has 10 photos, 15 services with descriptions, business description, service areas, hours ✅
+- GBP service areas: Bondi, Inner West, Sydney CBD, Parramatta ✅
+- GBP hours: Mon–Sun 7am–7pm ✅
+- GBP panel still needs a current public/incognito check
 - Memory files backed up to GitHub at .claude-memory/ ✅
 - 3-hour auto-update cron running (routine ID: trig_01Xtf948rjWRWwpTVpzYD2Mn) ✅
 
@@ -86,13 +90,13 @@ When you confirm you've read this, explicitly list all 9 rules back to me so I k
 - **Phone:** 0415 410 507 ✅ updated in code
 - **WhatsApp:** https://wa.me/61415410507
 - **Email:** hello@clenza.com.au
-- **Address:** Sydney, NSW ← still a general placeholder in code
+- **Address:** 7 Bennett St, Wentworthville NSW 2145 ✅ updated in key code locations
 
 ## Google Search Console
 - Old property: https://megaclean-pro.vercel.app (still exists, ignore)
 - New property: https://clenzaclean.com.au ✅ added 17 May 2026
 - Verification meta tag: both old and new tags in index.html (DO NOT REMOVE EITHER)
-- Sitemap: still needs to be submitted in the new property at https://search.google.com/search-console
+- Sitemap: submitted in the new property at https://search.google.com/search-console ✅
 
 ## Google Business Profile
 - URL: https://business.google.com
@@ -144,9 +148,17 @@ All updated to real number — if phone changes again, update these files:
 - ✅ Real address confirmed: 7 Bennett St, Wentworthville NSW 2145
 - ✅ Memory and start prompt updated
 
+## What Was Done — Session 20 May 2026
+- ✅ Address updated in code: Footer.jsx and index.html schema
+- ✅ Hero address overlay removed
+- ✅ Rug Cleaning emoji fixed
+- ✅ Privacy Policy page added
+- ✅ Terms of Service page added
+- ✅ Sticky mobile CTA bar added (Call + WhatsApp)
+- ✅ Latest repo state checked: branch `master`, synced with `origin/master`
+- ⚠️ Two untracked logo files exist in `public/images/services/`: `Clenza LOGO.png` and `clenza logo final.png`
+
 ## Still To Do
-- [ ] Update address in code — 7 Bennett St, Wentworthville NSW 2145 (Hero.jsx, Footer.jsx, index.html schema)
-- [ ] Fix Rug Cleaning emoji (currently 🏠 house — wrong)
 - [ ] Check Carpet Repair card image
 - [ ] Check GBP panel showing publicly in incognito (expected any day now)
 - [ ] Get real customer reviews on Google
@@ -155,8 +167,8 @@ All updated to real number — if phone changes again, update these files:
 - [ ] Replace draft logo with final high-res transparent PNG when ready
 - [ ] Set up Google Ads properly when ready (A$600 credit available — https://ads.google.com)
 - [ ] List on Airtasker, hipages, ServiceSeeking for immediate leads
-- [ ] Add Privacy Policy and Terms of Service pages
-- [ ] Add sticky mobile CTA bar (call + WhatsApp buttons visible on scroll)
+- [ ] Add Privacy Policy and Terms of Service URLs to sitemap.xml if you want them indexed
+- [ ] Decide what to do with untracked logo files in public/images/services/
 - [ ] Consider updating www CNAME in VentraIP to 03a88abd3c34c104.vercel-dns-017.com (optional)
 
 ## Rules — MUST FOLLOW, NO EXCEPTIONS
