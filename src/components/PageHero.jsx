@@ -16,7 +16,7 @@ export default function PageHero({ title, subtitle, crumb }) {
           {title}
         </h1>
         {subtitle && (
-          <p className="text-slate-400 text-lg max-w-2xl">{subtitle}</p>
+          <p className="text-slate-400 text-lg max-w-[22rem] sm:max-w-2xl">{subtitle}</p>
         )}
       </div>
     </section>

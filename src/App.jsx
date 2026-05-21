@@ -9,6 +9,11 @@ import QuotePage from './pages/QuotePage'
 import NotFoundPage from './pages/NotFoundPage'
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
 import TermsOfServicePage from './pages/TermsOfServicePage'
+import {
+  CleaningServicesStrathfieldPage,
+  CleaningServicesSydneyPage,
+  HouseCleaningSydneyPage,
+} from './pages/SeoLandingPage'
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation()
@@ -29,6 +34,9 @@ export default function App() {
           <Route path="about" element={<AboutPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="get-quote" element={<QuotePage />} />
+          <Route path="cleaning-services-sydney" element={<CleaningServicesSydneyPage />} />
+          <Route path="house-cleaning-sydney" element={<HouseCleaningSydneyPage />} />
+          <Route path="cleaning-services-strathfield" element={<CleaningServicesStrathfieldPage />} />
           <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="terms-of-service" element={<TermsOfServicePage />} />
           <Route path="*" element={<NotFoundPage />} />

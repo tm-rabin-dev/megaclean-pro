@@ -26,6 +26,9 @@ These rules MUST be followed at all times. No exceptions.
 
 When you confirm you've read this, explicitly list all 9 rules back to me so I know you've seen them.
 
+## ⚠️ USER EXECUTION RULE — GO MEANS START ⚠️
+When the user asks for a task list before execution, provide the task list and then STOP. Do not run commands, edit files, browse, test, commit, or push until the user explicitly says the word `GO`. After `GO`, execute the approved tasks and update memory when done.
+
 ## My Project: Clenza Cleaning Website
 
 **Local folder:** `c:\Users\tanvi\OneDrive\Desktop\Claude AI\client-sites\megaclean-pro`
@@ -38,7 +41,7 @@ When you confirm you've read this, explicitly list all 9 rules back to me so I k
 ## Read this file first for full project context:
 `c:\Users\tanvi\OneDrive\Desktop\Claude AI\client-sites\megaclean-pro\CLAUDE.md`
 
-## Current State (as of 20 May 2026)
+## Current State (as of 21 May 2026)
 - Site is live at https://clenzaclean.com.au ✅
 - SSL certificate active on https://clenzaclean.com.au and https://www.clenzaclean.com.au ✅
 - Backdoor URL https://megaclean-pro.vercel.app still works ✅
@@ -48,6 +51,9 @@ When you confirm you've read this, explicitly list all 9 rules back to me so I k
 - Interactive CompareSlider used in Hero, BeforeAfter section, and TransformationsGallery ✅
 - SEO configured: Google verification meta tags, schema markup, sitemap, robots.txt, canonical and OG tags ✅
 - All main URLs in code point to https://clenzaclean.com.au ✅
+- OG/social preview image exists at https://clenzaclean.com.au/images/og-image.jpg ✅
+- Sitemap includes Privacy Policy, Terms of Service and first SEO landing pages ✅
+- SEO landing pages added: /cleaning-services-sydney, /house-cleaning-sydney, /cleaning-services-strathfield ✅
 - Google Search Console verified for https://clenzaclean.com.au ✅ — sitemap submitted
 - Website indexed by Google as of 18 May 2026 ✅
 - Phone number updated to 0415 410 507 in all main components ✅
@@ -71,7 +77,8 @@ When you confirm you've read this, explicitly list all 9 rules back to me so I k
 - GBP has 10 photos, 15 services with descriptions, business description, service areas, hours ✅
 - GBP service areas: Bondi, Inner West, Sydney CBD, Parramatta ✅
 - GBP hours: Mon–Sun 7am–7pm ✅
-- GBP panel still needs a current public/incognito check
+- GBP panel visible publicly in Google Maps/search as of 20 May 2026 ✅
+- Review link: https://g.page/r/Cd-7rYaVZKSoEAE/review
 - Memory files backed up to GitHub at .claude-memory/ ✅
 - 3-hour auto-update cron running (routine ID: trig_01Xtf948rjWRWwpTVpzYD2Mn) ✅
 
@@ -159,16 +166,21 @@ All updated to real number — if phone changes again, update these files:
 - ✅ Latest repo state checked: branch `master`, synced with `origin/master`
 - ⚠️ Two untracked logo files exist in `public/images/services/`: `Clenza LOGO.png` and `clenza logo final.png`
 
+## What Was Done — Session 21 May 2026
+- ✅ Added USER EXECUTION RULE: wait for explicit `GO` after task-list approval before running commands or editing files
+- ✅ Added SEO landing page routes: `/cleaning-services-sydney`, `/house-cleaning-sydney`, `/cleaning-services-strathfield`
+- ✅ Added Privacy Policy, Terms of Service and SEO landing pages to `public/sitemap.xml`
+- ✅ Fixed missing OG/social preview image by adding `/public/images/og-image.jpg`
+- ✅ Updated memory after task completion
+
 ## Still To Do
 - [ ] Check Carpet Repair card image
-- [ ] Check GBP panel showing publicly in incognito (expected any day now)
 - [ ] Get real customer reviews on Google
-- [ ] Add suburb SEO pages (Parramatta, Bondi, Newtown etc.)
+- [ ] Add more suburb SEO pages (Parramatta, Bondi, Newtown etc.)
 - [ ] Replace AI-generated About page photos (team.png, van.png) with real photos
 - [ ] Replace draft logo with final high-res transparent PNG when ready
 - [ ] Set up Google Ads properly when ready (A$600 credit available — https://ads.google.com)
 - [ ] List on Airtasker, hipages, ServiceSeeking for immediate leads
-- [ ] Add Privacy Policy and Terms of Service URLs to sitemap.xml if you want them indexed
 - [ ] Decide what to do with untracked logo files in public/images/services/
 - [ ] Consider updating www CNAME in VentraIP to 03a88abd3c34c104.vercel-dns-017.com (optional)
 
@@ -182,6 +194,7 @@ All updated to real number — if phone changes again, update these files:
 7. Ask before doing anything destructive or hard to reverse
 8. Test mobile AND desktop before marking anything done
 9. Always give direct full URLs — never just domain names
+10. If the user requests a task list before execution, wait for explicit `GO` before running commands or editing files
 
 ## My Details
 - Based in Sydney, Australia
